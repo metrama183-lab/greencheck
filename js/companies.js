@@ -483,5 +483,760 @@ window.COMPANIES_DB = {
             recycling: { score: 4, good: ["Bricks last generations", "Replay program", "Sustainable materials R&D"], bad: ["Plastic product inherently"] }
         },
         badges: ["100% Renewable"], sources: [{ name: "LEGO Sustainability", url: "https://lego.com/sustainability" }], lastUpdated: "January 2026"
+    },
+
+    // ==================== MORE TECH ====================
+    ibm: {
+        id: "ibm", name: "IBM", sector: "Tech", greenScore: 70,
+        summary: "Net-zero by 2030. Strong on efficiency and renewable energy. Long sustainability track record.",
+        categories: {
+            emissions: { score: 4, good: ["Net-zero by 2030", "90% reduction from 2005"], bad: [] },
+            energy: { score: 4, good: ["75% renewable electricity", "Efficiency programs"], bad: [] },
+            transparency: { score: 5, good: ["Detailed CSR since 1990", "CDP A-list"], bad: [] },
+            labor: { score: 4, good: ["Strong benefits", "Training programs"], bad: ["Layoffs"] },
+            recycling: { score: 4, good: ["Product recycling", "Circular initiatives"], bad: [] }
+        },
+        badges: ["CDP A-List"], sources: [{ name: "IBM Environment", url: "https://ibm.com/environment" }], lastUpdated: "January 2026"
+    },
+    oracle: {
+        id: "oracle", name: "Oracle", sector: "Tech", greenScore: 62,
+        summary: "Cloud sustainability focus. 100% renewable for cloud regions. Data center efficiency leader.",
+        categories: {
+            emissions: { score: 3, good: ["Net-zero goal", "Scope 2 reductions"], bad: ["Growing infrastructure"] },
+            energy: { score: 4, good: ["100% renewable cloud regions", "Efficient cooling"], bad: [] },
+            transparency: { score: 3, good: ["CSR reports"], bad: ["Less detailed than peers"] },
+            labor: { score: 4, good: ["Employee benefits"], bad: [] },
+            recycling: { score: 3, good: ["E-waste programs"], bad: [] }
+        },
+        badges: [], sources: [{ name: "Oracle Sustainability", url: "https://oracle.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    salesforce: {
+        id: "salesforce", name: "Salesforce", sector: "Tech", greenScore: 78,
+        summary: "Net-zero across full value chain achieved. 100% renewable. Strong climate advocacy.",
+        categories: {
+            emissions: { score: 5, good: ["Net-zero achieved", "Science-based targets"], bad: [] },
+            energy: { score: 5, good: ["100% renewable since 2021"], bad: [] },
+            transparency: { score: 5, good: ["Stakeholder Impact Report", "Climate action leadership"], bad: [] },
+            labor: { score: 5, good: ["Best places to work", "Equality focus"], bad: [] },
+            recycling: { score: 4, good: ["Office programs"], bad: [] }
+        },
+        badges: ["Net-Zero Achieved", "100% Renewable"], sources: [{ name: "Salesforce Sustainability", url: "https://salesforce.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    adobe: {
+        id: "adobe", name: "Adobe", sector: "Tech", greenScore: 72,
+        summary: "100% renewable electricity. Net-zero operations. Strong on employee sustainability.",
+        categories: {
+            emissions: { score: 4, good: ["Net-zero operations", "Science-based targets"], bad: [] },
+            energy: { score: 5, good: ["100% renewable electricity"], bad: [] },
+            transparency: { score: 4, good: ["CSR reports", "CDP reporting"], bad: [] },
+            labor: { score: 5, good: ["Great workplace", "Benefits"], bad: [] },
+            recycling: { score: 4, good: ["Office sustainability"], bad: [] }
+        },
+        badges: ["100% Renewable"], sources: [{ name: "Adobe Sustainability", url: "https://adobe.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    x_twitter: {
+        id: "x_twitter", name: "X (Twitter)", sector: "Tech", greenScore: 35,
+        summary: "Limited sustainability disclosure post-acquisition. Previously had climate goals under Twitter.",
+        categories: {
+            emissions: { score: 2, good: ["Previous carbon neutral ops"], bad: ["No recent disclosure", "Goals unclear"] },
+            energy: { score: 2, good: ["Some renewable use"], bad: ["Transparency lost"] },
+            transparency: { score: 1, good: [], bad: ["No sustainability report", "No ESG disclosure"] },
+            labor: { score: 1, good: [], bad: ["Mass layoffs", "Workplace concerns"] },
+            recycling: { score: 2, good: ["Office programs"], bad: [] }
+        },
+        badges: [], controversies: ["Transparency loss", "Layoffs"], sources: [{ name: "X Corp", url: "https://x.com" }], lastUpdated: "January 2026"
+    },
+    paypal: {
+        id: "paypal", name: "PayPal", sector: "Finance", greenScore: 65,
+        summary: "Carbon neutral operations. Fintech sustainability initiatives. Financial inclusion focus.",
+        categories: {
+            emissions: { score: 4, good: ["Carbon neutral operations", "Net-zero by 2040"], bad: [] },
+            energy: { score: 4, good: ["Renewable energy purchases"], bad: [] },
+            transparency: { score: 4, good: ["Global Impact Report"], bad: [] },
+            labor: { score: 4, good: ["Employee programs"], bad: ["Layoffs 2023"] },
+            recycling: { score: 3, good: ["Office programs"], bad: [] }
+        },
+        badges: ["Carbon Neutral"], sources: [{ name: "PayPal ESG", url: "https://paypal.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    visa: {
+        id: "visa", name: "Visa", sector: "Finance", greenScore: 68,
+        summary: "Carbon neutral operations since 2020. 100% renewable electricity. Climate tech investments.",
+        categories: {
+            emissions: { score: 4, good: ["Carbon neutral since 2020", "Net-zero by 2040"], bad: [] },
+            energy: { score: 5, good: ["100% renewable electricity"], bad: [] },
+            transparency: { score: 4, good: ["ESG reports"], bad: [] },
+            labor: { score: 4, good: ["Strong benefits"], bad: [] },
+            recycling: { score: 3, good: ["Card recycling pilots"], bad: ["Plastic cards"] }
+        },
+        badges: ["Carbon Neutral"], sources: [{ name: "Visa ESG", url: "https://visa.com/esg" }], lastUpdated: "January 2026"
+    },
+    mastercard: {
+        id: "mastercard", name: "Mastercard", sector: "Finance", greenScore: 70,
+        summary: "Carbon neutral since 2021. Strong climate action. Priceless Planet Coalition founder.",
+        categories: {
+            emissions: { score: 4, good: ["Carbon neutral since 2021", "Science-based targets"], bad: [] },
+            energy: { score: 5, good: ["100% renewable"], bad: [] },
+            transparency: { score: 5, good: ["ESG reports", "TCFD"], bad: [] },
+            labor: { score: 4, good: ["Great workplace"], bad: [] },
+            recycling: { score: 4, good: ["Sustainable cards", "Tree planting"], bad: [] }
+        },
+        badges: ["Carbon Neutral", "Priceless Planet"], sources: [{ name: "Mastercard Sustainability", url: "https://mastercard.com/sustainability" }], lastUpdated: "January 2026"
+    },
+
+    // ==================== MORE FASHION ====================
+    uniqlo: {
+        id: "uniqlo", name: "Uniqlo", sector: "Fashion", greenScore: 55,
+        summary: "RE.UNIQLO recycling. LifeWear philosophy for durability. Working on supply chain sustainability.",
+        categories: {
+            emissions: { score: 3, good: ["Reduction targets set"], bad: ["Large production footprint"] },
+            energy: { score: 3, good: ["Some renewable at HQ"], bad: ["Global supply chain"] },
+            transparency: { score: 3, good: ["Sustainability reports"], bad: ["Supply chain opacity"] },
+            labor: { score: 3, good: ["Supplier audits"], bad: ["Uyghur cotton concerns"] },
+            recycling: { score: 4, good: ["RE.UNIQLO program", "Down recycling"], bad: [] }
+        },
+        badges: [], controversies: ["Supply chain concerns"], sources: [{ name: "Uniqlo Sustainability", url: "https://uniqlo.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    levis: {
+        id: "levis", name: "Levi's", sector: "Fashion", greenScore: 68,
+        summary: "Water<Less innovation. SecondHand resale. Long-lasting denim philosophy. Climate action leadership.",
+        categories: {
+            emissions: { score: 3, good: ["Science-based targets", "90% renewable in owned ops"], bad: ["Supply chain Scope 3"] },
+            energy: { score: 4, good: ["90% renewable owned operations"], bad: [] },
+            transparency: { score: 4, good: ["Detailed sustainability reports"], bad: [] },
+            labor: { score: 4, good: ["Worker wellbeing program", "Supplier standards"], bad: [] },
+            recycling: { score: 5, good: ["Water<Less tech (saves 3B liters)", "SecondHand program", "Tailor shops"], bad: [] }
+        },
+        badges: ["Water Innovation"], sources: [{ name: "Levi's Sustainability", url: "https://levistrauss.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    puma: {
+        id: "puma", name: "Puma", sector: "Fashion", greenScore: 64,
+        summary: "RE:SUEDE biodegradable shoes. Science-based targets. First Fashion Pact signatory.",
+        categories: {
+            emissions: { score: 3, good: ["Science-based targets", "35% reduction goal"], bad: ["Manufacturing footprint"] },
+            energy: { score: 4, good: ["100% renewable owned ops"], bad: [] },
+            transparency: { score: 4, good: ["Sustainability reports", "EP&L accounting"], bad: [] },
+            labor: { score: 3, good: ["Supplier audits"], bad: ["Supply chain challenges"] },
+            recycling: { score: 4, good: ["RE:SUEDE program", "Recycled materials"], bad: [] }
+        },
+        badges: ["Fashion Pact"], sources: [{ name: "Puma Sustainability", url: "https://puma.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    gucci: {
+        id: "gucci", name: "Gucci (Kering)", sector: "Fashion", greenScore: 66,
+        summary: "Carbon neutral since 2019. EP&L pioneer. Sustainable luxury leader. Fur-free since 2017.",
+        categories: {
+            emissions: { score: 4, good: ["Carbon neutral since 2019", "Science-based targets"], bad: [] },
+            energy: { score: 4, good: ["Renewable energy"], bad: [] },
+            transparency: { score: 5, good: ["EP&L since 2015", "Detailed reports"], bad: [] },
+            labor: { score: 4, good: ["Italian craftsmanship", "Fair wages"], bad: [] },
+            recycling: { score: 4, good: ["Circular programs", "Fur-free"], bad: ["Luxury consumption model"] }
+        },
+        badges: ["Carbon Neutral", "Fur-Free"], sources: [{ name: "Gucci Equilibrium", url: "https://equilibrium.gucci.com" }], lastUpdated: "January 2026"
+    },
+    gap: {
+        id: "gap", name: "Gap Inc.", sector: "Fashion", greenScore: 52,
+        summary: "Water stewardship focus. Some sustainability progress but fast fashion model remains.",
+        categories: {
+            emissions: { score: 3, good: ["Reduction targets"], bad: ["Large scale production"] },
+            energy: { score: 3, good: ["Renewable progress"], bad: ["Global supply chain"] },
+            transparency: { score: 3, good: ["ESG reports"], bad: [] },
+            labor: { score: 3, good: ["P.A.C.E. program"], bad: ["Supply chain issues"] },
+            recycling: { score: 3, good: ["Some recycling"], bad: ["Fast fashion waste"] }
+        },
+        badges: [], sources: [{ name: "Gap ESG", url: "https://gapinc.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    northface: {
+        id: "northface", name: "The North Face", sector: "Fashion", greenScore: 70,
+        summary: "VF Corporation brand. Strong on recycled materials. Renewed program for resale. Outdoor conservation.",
+        categories: {
+            emissions: { score: 4, good: ["VF net-zero by 2050", "Science-based targets"], bad: [] },
+            energy: { score: 4, good: ["Renewable progress"], bad: [] },
+            transparency: { score: 4, good: ["VF sustainability reports"], bad: [] },
+            labor: { score: 4, good: ["Supplier standards"], bad: [] },
+            recycling: { score: 5, good: ["Renewed resale program", "Recycled materials", "Product durability"], bad: [] }
+        },
+        badges: ["Renewed Program"], sources: [{ name: "TNF Sustainability", url: "https://thenorthface.com/sustainability" }], lastUpdated: "January 2026"
+    },
+
+    // ==================== MORE FOOD ====================
+    pepsi: {
+        id: "pepsi", name: "PepsiCo", sector: "Food & Beverage", greenScore: 52,
+        summary: "pep+ strategy for sustainability. Water stewardship focus. Packaging challenges remain.",
+        categories: {
+            emissions: { score: 3, good: ["Net-zero by 2040", "pep+ strategy"], bad: ["Agricultural emissions"] },
+            energy: { score: 3, good: ["Renewable progress"], bad: ["Global operations"] },
+            transparency: { score: 4, good: ["Detailed ESG reports"], bad: [] },
+            labor: { score: 3, good: ["Worker programs"], bad: ["Supply chain oversight"] },
+            recycling: { score: 3, good: ["Packaging reduction"], bad: ["Single-use plastics", "Bottle collection gaps"] }
+        },
+        badges: [], sources: [{ name: "PepsiCo ESG", url: "https://pepsico.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    unilever: {
+        id: "unilever", name: "Unilever", sector: "Food & Beverage", greenScore: 68,
+        summary: "Long sustainability leader. Clean Future program. Strong CDP scores. Deforestation-free goal.",
+        categories: {
+            emissions: { score: 4, good: ["Net-zero by 2039", "Scope 1&2 reduction achieved"], bad: ["Scope 3 challenging"] },
+            energy: { score: 4, good: ["100% renewable grid electricity"], bad: [] },
+            transparency: { score: 5, good: ["Detailed reports since 1990s", "CDP A-list"], bad: [] },
+            labor: { score: 4, good: ["Living wage commitment"], bad: [] },
+            recycling: { score: 4, good: ["Plastic reduction targets", "Refill stations"], bad: ["Still significant plastic"] }
+        },
+        badges: ["CDP A-List"], sources: [{ name: "Unilever Sustainability", url: "https://unilever.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    danone: {
+        id: "danone", name: "Danone", sector: "Food & Beverage", greenScore: 72,
+        summary: "B Corp certified. One Planet. One Health vision. Strong on regenerative agriculture.",
+        categories: {
+            emissions: { score: 4, good: ["Net-zero by 2050", "Carbon neutral for key brands"], bad: [] },
+            energy: { score: 4, good: ["Renewable progress"], bad: [] },
+            transparency: { score: 5, good: ["B Corp certified", "Integrated reports"], bad: [] },
+            labor: { score: 4, good: ["Living wage efforts"], bad: [] },
+            recycling: { score: 4, good: ["Circular packaging goal"], bad: ["Dairy emissions challenge"] }
+        },
+        badges: ["B-Corp"], sources: [{ name: "Danone Sustainability", url: "https://danone.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    kfc: {
+        id: "kfc", name: "KFC (Yum!)", sector: "Food & Beverage", greenScore: 40,
+        summary: "Yum! Brands subsidiary. Some sustainability efforts but meat-heavy model challenging.",
+        categories: {
+            emissions: { score: 2, good: ["Yum! science-based targets"], bad: ["Chicken supply chain", "Deforestation links"] },
+            energy: { score: 3, good: ["Some renewable"], bad: ["Franchise model"] },
+            transparency: { score: 3, good: ["Yum! ESG reports"], bad: [] },
+            labor: { score: 2, good: ["Training programs"], bad: ["Fast food wages", "Franchise labor"] },
+            recycling: { score: 2, good: ["Packaging reduction"], bad: ["Single-use dominant"] }
+        },
+        badges: [], controversies: ["Animal welfare"], sources: [{ name: "Yum! ESG", url: "https://yum.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    burgerking: {
+        id: "burgerking", name: "Burger King", sector: "Food & Beverage", greenScore: 38,
+        summary: "RBI subsidiary. Methane reduction in beef piloted. But meat-centric model problematic.",
+        categories: {
+            emissions: { score: 2, good: ["Methane reduction pilots", "Net-zero goal"], bad: ["Beef is major source"] },
+            energy: { score: 2, good: ["Some efficiency"], bad: ["Franchise model"] },
+            transparency: { score: 3, good: ["RBI reports"], bad: [] },
+            labor: { score: 2, good: ["Training"], bad: ["Fast food wages"] },
+            recycling: { score: 2, good: ["Some packaging changes"], bad: ["Single-use waste"] }
+        },
+        badges: [], sources: [{ name: "RBI Sustainability", url: "https://rbi.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    chipotle: {
+        id: "chipotle", name: "Chipotle", sector: "Food & Beverage", greenScore: 58,
+        summary: "Food with Integrity mission. Real food focus. Some sustainability leadership in fast-casual.",
+        categories: {
+            emissions: { score: 3, good: ["50% reduction goal by 2030"], bad: ["Meat supply chain"] },
+            energy: { score: 3, good: ["Renewable progress"], bad: [] },
+            transparency: { score: 4, good: ["Sustainability reports"], bad: [] },
+            labor: { score: 3, good: ["Crew benefits"], bad: ["Some labor issues"] },
+            recycling: { score: 3, good: ["Sustainable packaging"], bad: ["Still significant waste"] }
+        },
+        badges: ["Food With Integrity"], sources: [{ name: "Chipotle Sustainability", url: "https://chipotle.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    oatly: {
+        id: "oatly", name: "Oatly", sector: "Food & Beverage", greenScore: 82,
+        summary: "Plant-based milk = 80% less emissions than dairy. Climate-focused mission. Transparent about impact.",
+        categories: {
+            emissions: { score: 5, good: ["80% less emissions than dairy", "Climate-first mission"], bad: [] },
+            energy: { score: 4, good: ["Renewable in production"], bad: [] },
+            transparency: { score: 5, good: ["Climate footprint on packaging", "Sustainability reports"], bad: [] },
+            labor: { score: 4, good: ["Mission-driven culture"], bad: [] },
+            recycling: { score: 4, good: ["Tetra Pak recyclable"], bad: ["Some packaging challenges"] }
+        },
+        badges: ["Climate-Positive Product"], sources: [{ name: "Oatly Sustainability", url: "https://oatly.com/sustainability" }], lastUpdated: "January 2026"
+    },
+
+    // ==================== MORE AUTOMOTIVE ====================
+    bmw: {
+        id: "bmw", name: "BMW", sector: "Automotive", greenScore: 62,
+        summary: "Strong EV investment. i series leadership. Circular economy focus. Net-zero by 2050.",
+        categories: {
+            emissions: { score: 3, good: ["Net-zero by 2050", "i series EVs"], bad: ["ICE still majority"] },
+            energy: { score: 4, good: ["100% renewable at plants"], bad: [] },
+            transparency: { score: 4, good: ["Integrated reports"], bad: [] },
+            labor: { score: 4, good: ["German labor standards"], bad: [] },
+            recycling: { score: 4, good: ["i Vision Circular concept", "Battery recycling"], bad: [] }
+        },
+        badges: [], sources: [{ name: "BMW Sustainability", url: "https://bmwgroup.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    mercedes: {
+        id: "mercedes", name: "Mercedes-Benz", sector: "Automotive", greenScore: 60,
+        summary: "EQ electric line expanding. Net-zero by 2039. Premium sustainability push. Factory efficiency.",
+        categories: {
+            emissions: { score: 3, good: ["Net-zero by 2039", "EQ electric lineup"], bad: ["Luxury = higher footprint"] },
+            energy: { score: 4, good: ["Carbon neutral manufacturing"], bad: [] },
+            transparency: { score: 4, good: ["Sustainability reports"], bad: [] },
+            labor: { score: 4, good: ["German standards", "Just transition"], bad: [] },
+            recycling: { score: 4, good: ["Battery recycling", "Circular design"], bad: [] }
+        },
+        badges: [], sources: [{ name: "Mercedes Sustainability", url: "https://mercedes-benz.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    ford: {
+        id: "ford", name: "Ford", sector: "Automotive", greenScore: 55,
+        summary: "F-150 Lightning success. $50B EV investment. But trucks/SUVs still core.",
+        categories: {
+            emissions: { score: 3, good: ["Carbon neutral by 2050", "EV investments"], bad: ["Truck-heavy portfolio"] },
+            energy: { score: 3, good: ["Renewable at some plants"], bad: [] },
+            transparency: { score: 4, good: ["Sustainability reports"], bad: [] },
+            labor: { score: 3, good: ["UAW relations"], bad: ["EV transition challenges"] },
+            recycling: { score: 3, good: ["Battery recycling"], bad: [] }
+        },
+        badges: [], sources: [{ name: "Ford Sustainability", url: "https://ford.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    gm: {
+        id: "gm", name: "General Motors", sector: "Automotive", greenScore: 54,
+        summary: "All-electric by 2035 goal. Ultium platform. But transitioning from massive ICE legacy.",
+        categories: {
+            emissions: { score: 3, good: ["All-electric by 2035", "Net-zero by 2040"], bad: ["Current ICE dominance"] },
+            energy: { score: 3, good: ["Renewable at facilities"], bad: [] },
+            transparency: { score: 4, good: ["Sustainability reports"], bad: [] },
+            labor: { score: 3, good: ["Union partnership"], bad: ["EV job transitions"] },
+            recycling: { score: 3, good: ["Battery recycling"], bad: [] }
+        },
+        badges: [], sources: [{ name: "GM Sustainability", url: "https://gm.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    hyundai: {
+        id: "hyundai", name: "Hyundai", sector: "Automotive", greenScore: 58,
+        summary: "IONIQ EV line growing. Hydrogen fuel cell leadership. Net-zero by 2045.",
+        categories: {
+            emissions: { score: 3, good: ["Net-zero by 2045", "IONIQ EVs"], bad: [] },
+            energy: { score: 3, good: ["Renewable progress"], bad: [] },
+            transparency: { score: 4, good: ["Sustainability reports"], bad: [] },
+            labor: { score: 3, good: ["Korean standards"], bad: ["Supply chain oversight"] },
+            recycling: { score: 4, good: ["Battery recycling", "Hydrogen focus"], bad: [] }
+        },
+        badges: ["Hydrogen Pioneer"], sources: [{ name: "Hyundai Sustainability", url: "https://hyundai.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    byd: {
+        id: "byd", name: "BYD", sector: "Automotive", greenScore: 72,
+        summary: "World's largest EV maker. Vertical integration. Battery leader. Stopped ICE production.",
+        categories: {
+            emissions: { score: 4, good: ["EV-only now", "Battery manufacturing"], bad: ["China grid still coal"] },
+            energy: { score: 4, good: ["Solar investments"], bad: ["Grid limitations"] },
+            transparency: { score: 3, good: ["Some reporting"], bad: ["Less than Western peers"] },
+            labor: { score: 3, good: ["Growing workforce"], bad: ["Working conditions questions"] },
+            recycling: { score: 4, good: ["Battery recycling"], bad: [] }
+        },
+        badges: ["EV Leader"], sources: [{ name: "BYD", url: "https://byd.com" }], lastUpdated: "January 2026"
+    },
+
+    // ==================== MORE RETAIL ====================
+    target: {
+        id: "target", name: "Target", sector: "Retail", greenScore: 58,
+        summary: "Target Forward strategy. Renewable energy progress. Sustainable brands focus.",
+        categories: {
+            emissions: { score: 3, good: ["Net-zero by 2040", "Target Forward"], bad: ["Scope 3 challenging"] },
+            energy: { score: 4, good: ["100% renewable by 2030", "Solar on stores"], bad: [] },
+            transparency: { score: 4, good: ["ESG reports"], bad: [] },
+            labor: { score: 3, good: ["Wage increases"], bad: ["Retail pressures"] },
+            recycling: { score: 3, good: ["Packaging reduction", "Recycling programs"], bad: [] }
+        },
+        badges: [], sources: [{ name: "Target ESG", url: "https://target.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    costco: {
+        id: "costco", name: "Costco", sector: "Retail", greenScore: 50,
+        summary: "Bulk reduces packaging per unit. Solar on warehouses. But bulk consumption model.",
+        categories: {
+            emissions: { score: 3, good: ["Reduction efforts"], bad: ["Large supply chain"] },
+            energy: { score: 3, good: ["Solar installations"], bad: [] },
+            transparency: { score: 3, good: ["Some ESG reporting"], bad: ["Less detailed"] },
+            labor: { score: 4, good: ["Above-average wages", "Benefits"], bad: [] },
+            recycling: { score: 3, good: ["Bulk = less packaging"], bad: ["Encourages consumption"] }
+        },
+        badges: [], sources: [{ name: "Costco Sustainability", url: "https://costco.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    homedepot: {
+        id: "homedepot", name: "Home Depot", sector: "Retail", greenScore: 55,
+        summary: "Eco Actions program. Responsible wood sourcing. Energy efficiency products.",
+        categories: {
+            emissions: { score: 3, good: ["Science-based targets", "Emissions reduction"], bad: ["Large footprint"] },
+            energy: { score: 4, good: ["Renewable progress", "LED conversion"], bad: [] },
+            transparency: { score: 4, good: ["Responsibility reports"], bad: [] },
+            labor: { score: 3, good: ["Associate programs"], bad: ["Retail challenges"] },
+            recycling: { score: 4, good: ["CFL/battery recycling", "FSC wood"], bad: [] }
+        },
+        badges: [], sources: [{ name: "Home Depot Responsibility", url: "https://homedepot.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    alibaba: {
+        id: "alibaba", name: "Alibaba", sector: "Retail", greenScore: 48,
+        summary: "Carbon neutral operations by 2030. Green logistics push. But enables massive consumption.",
+        categories: {
+            emissions: { score: 2, good: ["Carbon neutral ops by 2030"], bad: ["Enables massive commerce", "Logistics emissions"] },
+            energy: { score: 3, good: ["Renewable at data centers"], bad: ["China grid"] },
+            transparency: { score: 3, good: ["ESG reports"], bad: ["Less detailed"] },
+            labor: { score: 2, good: ["Tech salaries"], bad: ["996 culture criticism"] },
+            recycling: { score: 3, good: ["Green packaging initiative"], bad: ["E-commerce waste"] }
+        },
+        badges: [], controversies: ["Enables consumption"], sources: [{ name: "Alibaba ESG", url: "https://alibabagroup.com/esg" }], lastUpdated: "January 2026"
+    },
+    ebay: {
+        id: "ebay", name: "eBay", sector: "Retail", greenScore: 68,
+        summary: "Circular economy leader - resale extends product life. Carbon neutral operations.",
+        categories: {
+            emissions: { score: 4, good: ["Carbon neutral", "Resale = emissions avoided"], bad: [] },
+            energy: { score: 4, good: ["100% renewable"], bad: [] },
+            transparency: { score: 4, good: ["Impact reports"], bad: [] },
+            labor: { score: 4, good: ["Good workplace"], bad: [] },
+            recycling: { score: 5, good: ["Entire model is reuse", "Circular economy pioneer"], bad: [] }
+        },
+        badges: ["Circular Economy"], sources: [{ name: "eBay Impact", url: "https://ebayinc.com/impact" }], lastUpdated: "January 2026"
+    },
+    etsy: {
+        id: "etsy", name: "Etsy", sector: "Retail", greenScore: 78,
+        summary: "Carbon neutral shipping since 2019. B Corp pending. Handmade = lower impact. Small business support.",
+        categories: {
+            emissions: { score: 5, good: ["Carbon neutral shipping since 2019", "100% renewable"], bad: [] },
+            energy: { score: 5, good: ["100% renewable electricity"], bad: [] },
+            transparency: { score: 5, good: ["Integrated reports"], bad: [] },
+            labor: { score: 5, good: ["Great workplace", "Seller support"], bad: [] },
+            recycling: { score: 4, good: ["Handmade = more sustainable"], bad: ["Shipping materials"] }
+        },
+        badges: ["Carbon Neutral Shipping"], sources: [{ name: "Etsy Impact", url: "https://etsy.com/impact" }], lastUpdated: "January 2026"
+    },
+
+    // ==================== MORE ENERGY ====================
+    exxon: {
+        id: "exxon", name: "ExxonMobil", sector: "Energy", greenScore: 22,
+        summary: "Major oil company. Limited transition efforts. CCS investments but core is fossil fuels.",
+        categories: {
+            emissions: { score: 1, good: ["Some CCS investments"], bad: ["Major oil producer", "Funded climate denial"] },
+            energy: { score: 1, good: ["Some biofuels"], bad: ["Minimal renewables", "Oil expansion"] },
+            transparency: { score: 2, good: ["Some reporting"], bad: ["Climate denial history"] },
+            labor: { score: 3, good: ["Strong safety"], bad: [] },
+            recycling: { score: 2, good: ["Plastics initiatives"], bad: ["Creates plastic feedstocks"] }
+        },
+        badges: [], controversies: ["Climate denial", "Oil expansion"], sources: [{ name: "ExxonMobil", url: "https://exxonmobil.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    chevron: {
+        id: "chevron", name: "Chevron", sector: "Energy", greenScore: 24,
+        summary: "Major oil company with minimal transition. Some renewable investments but fossil core.",
+        categories: {
+            emissions: { score: 1, good: ["Net-zero aspiration"], bad: ["Major oil/gas producer", "Increasing production"] },
+            energy: { score: 1, good: ["Some solar"], bad: ["Fossil dominates"] },
+            transparency: { score: 2, good: ["Sustainability reports"], bad: ["Minimal action vs claims"] },
+            labor: { score: 3, good: ["Safety focus"], bad: [] },
+            recycling: { score: 2, good: ["Some circular efforts"], bad: [] }
+        },
+        badges: [], controversies: ["Climate litigation"], sources: [{ name: "Chevron", url: "https://chevron.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    totalenergies: {
+        id: "totalenergies", name: "TotalEnergies", sector: "Energy", greenScore: 35,
+        summary: "Rebranded as 'energies' company. More renewables than peers but still majority fossil.",
+        categories: {
+            emissions: { score: 2, good: ["Net-zero by 2050", "More renewables than peers"], bad: ["Still 60%+ fossil fuels"] },
+            energy: { score: 3, good: ["Growing renewables portfolio"], bad: ["Oil/gas expansion continues"] },
+            transparency: { score: 3, good: ["Integrated reports"], bad: ["Accused of greenwashing"] },
+            labor: { score: 3, good: ["Transition programs"], bad: [] },
+            recycling: { score: 2, good: ["Lubricant recycling"], bad: [] }
+        },
+        badges: [], controversies: ["Uganda pipeline"], sources: [{ name: "TotalEnergies", url: "https://totalenergies.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    nextera: {
+        id: "nextera", name: "NextEra Energy", sector: "Energy", greenScore: 82,
+        summary: "World's largest wind/solar generator. Leading US clean energy transition. Still some gas.",
+        categories: {
+            emissions: { score: 4, good: ["Largest wind/solar generator", "67% reduction since 2005"], bad: ["Some natural gas"] },
+            energy: { score: 5, good: ["50+ GW renewables", "Wind/solar leader"], bad: [] },
+            transparency: { score: 4, good: ["ESG reports"], bad: [] },
+            labor: { score: 4, good: ["Clean energy jobs"], bad: [] },
+            recycling: { score: 4, good: ["Solar panel recycling"], bad: ["Blade disposal"] }
+        },
+        badges: ["Clean Energy Leader"], sources: [{ name: "NextEra ESG", url: "https://nexteraenergy.com/esg" }], lastUpdated: "January 2026"
+    },
+    iberdrola: {
+        id: "iberdrola", name: "Iberdrola", sector: "Energy", greenScore: 80,
+        summary: "Spanish clean energy leader. Major offshore wind. Net-zero by 2040. Exiting coal.",
+        categories: {
+            emissions: { score: 4, good: ["Net-zero by 2040", "81% emission-free"], bad: [] },
+            energy: { score: 5, good: ["40+ GW renewables", "Leader in offshore wind"], bad: [] },
+            transparency: { score: 5, good: ["Integrated reports", "CDP A-list"], bad: [] },
+            labor: { score: 4, good: ["Green jobs"], bad: [] },
+            recycling: { score: 4, good: ["Circular strategies"], bad: [] }
+        },
+        badges: ["CDP A-List", "Clean Energy Leader"], sources: [{ name: "Iberdrola Sustainability", url: "https://iberdrola.com/sustainability" }], lastUpdated: "January 2026"
+    },
+
+    // ==================== MORE ENTERTAINMENT ====================
+    sony: {
+        id: "sony", name: "Sony", sector: "Entertainment", greenScore: 64,
+        summary: "Road to Zero program. RE100 member. Gaming console efficiency improving.",
+        categories: {
+            emissions: { score: 3, good: ["Net-zero by 2040", "RE100 member"], bad: ["Electronics footprint"] },
+            energy: { score: 4, good: ["100% renewable goal by 2030"], bad: [] },
+            transparency: { score: 4, good: ["Sustainability reports"], bad: [] },
+            labor: { score: 4, good: ["Japanese standards"], bad: [] },
+            recycling: { score: 3, good: ["Electronics take-back", "SORPLAS recycled plastic"], bad: ["Gaming e-waste"] }
+        },
+        badges: ["RE100"], sources: [{ name: "Sony Sustainability", url: "https://sony.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    warner: {
+        id: "warner", name: "Warner Bros. Discovery", sector: "Entertainment", greenScore: 55,
+        summary: "Production sustainability programs. Carbon neutral goal. Studio energy efficiency.",
+        categories: {
+            emissions: { score: 3, good: ["Carbon neutral goal", "Production protocols"], bad: ["Travel/logistics"] },
+            energy: { score: 3, good: ["Studio solar"], bad: [] },
+            transparency: { score: 3, good: ["Sustainability initiatives"], bad: ["Less detailed than peers"] },
+            labor: { score: 3, good: ["Production crew programs"], bad: ["Industry pressures"] },
+            recycling: { score: 3, good: ["Set recycling"], bad: ["Production waste"] }
+        },
+        badges: [], sources: [{ name: "Warner Bros.", url: "https://wbd.com/sustainability" }], lastUpdated: "January 2026"
+    },
+
+    // ==================== HEALTHCARE ====================
+    jnj: {
+        id: "jnj", name: "Johnson & Johnson", sector: "Healthcare", greenScore: 65,
+        summary: "Health for Humanity goals. Carbon neutral by 2030. Water stewardship. Supply chain challenges.",
+        categories: {
+            emissions: { score: 4, good: ["Carbon neutral by 2030", "Science-based targets"], bad: [] },
+            energy: { score: 4, good: ["100% renewable by 2025"], bad: [] },
+            transparency: { score: 4, good: ["Health for Humanity reports"], bad: [] },
+            labor: { score: 3, good: ["Healthcare access programs"], bad: ["Talc litigation"] },
+            recycling: { score: 3, good: ["Packaging reduction"], bad: ["Medical waste challenges"] }
+        },
+        badges: [], controversies: ["Talc litigation"], sources: [{ name: "J&J ESG", url: "https://jnj.com/esg" }], lastUpdated: "January 2026"
+    },
+    pfizer: {
+        id: "pfizer", name: "Pfizer", sector: "Healthcare", greenScore: 62,
+        summary: "Net-zero by 2040. Vaccine access programs. Manufacturing sustainability improvements.",
+        categories: {
+            emissions: { score: 3, good: ["Net-zero by 2040", "Scope 1&2 reduction"], bad: ["Manufacturing footprint"] },
+            energy: { score: 4, good: ["Renewable progress"], bad: [] },
+            transparency: { score: 4, good: ["ESG reports"], bad: [] },
+            labor: { score: 4, good: ["Good benefits"], bad: [] },
+            recycling: { score: 3, good: ["Waste reduction"], bad: ["Pharmaceutical waste"] }
+        },
+        badges: [], sources: [{ name: "Pfizer ESG", url: "https://pfizer.com/esg" }], lastUpdated: "January 2026"
+    },
+
+    // ==================== TRAVEL ====================
+    booking: {
+        id: "booking", name: "Booking.com", sector: "Tech", greenScore: 52,
+        summary: "Travel sustainability badges. Climate action program. But enables air travel emissions.",
+        categories: {
+            emissions: { score: 3, good: ["Climate action program", "Carbon offset"], bad: ["Enables travel emissions"] },
+            energy: { score: 3, good: ["Office sustainability"], bad: [] },
+            transparency: { score: 3, good: ["Sustainability reports"], bad: [] },
+            labor: { score: 4, good: ["Tech benefits"], bad: [] },
+            recycling: { score: 3, good: ["Office programs"], bad: [] }
+        },
+        badges: [], sources: [{ name: "Booking Holdings", url: "https://bookingholdings.com/sustainability" }], lastUpdated: "January 2026"
+    },
+
+    // ==================== SOCIAL MEDIA ====================
+    tiktok: {
+        id: "tiktok", name: "TikTok (ByteDance)", sector: "Tech", greenScore: 40,
+        summary: "Limited sustainability disclosure. Data centers growing. Parent ByteDance has some initiatives.",
+        categories: {
+            emissions: { score: 2, good: ["ByteDance carbon commitments"], bad: ["Rapid growth", "Limited disclosure"] },
+            energy: { score: 2, good: ["Some renewable data centers"], bad: ["China grid coal-heavy"] },
+            transparency: { score: 2, good: ["Some reporting"], bad: ["Less transparent than Western tech"] },
+            labor: { score: 3, good: ["Tech salaries"], bad: ["996 culture concerns"] },
+            recycling: { score: 2, good: ["Office programs"], bad: [] }
+        },
+        badges: [], sources: [{ name: "ByteDance", url: "https://bytedance.com" }], lastUpdated: "January 2026"
+    },
+    snapchat: {
+        id: "snapchat", name: "Snap Inc.", sector: "Tech", greenScore: 60,
+        summary: "Net-zero by 2030. Smaller footprint than peers. Some sustainability initiatives.",
+        categories: {
+            emissions: { score: 3, good: ["Net-zero by 2030", "Carbon neutral operations"], bad: [] },
+            energy: { score: 4, good: ["Renewable purchases"], bad: [] },
+            transparency: { score: 3, good: ["Citizenship reports"], bad: [] },
+            labor: { score: 4, good: ["Tech culture"], bad: ["Layoffs"] },
+            recycling: { score: 3, good: ["Office programs"], bad: [] }
+        },
+        badges: [], sources: [{ name: "Snap Citizenship", url: "https://snap.com/citizenship" }], lastUpdated: "January 2026"
+    },
+    linkedin: {
+        id: "linkedin", name: "LinkedIn", sector: "Tech", greenScore: 72,
+        summary: "Microsoft subsidiary benefits from parent's sustainability. Carbon neutral. Professional platform for green jobs.",
+        categories: {
+            emissions: { score: 4, good: ["Microsoft carbon negative goal", "Carbon neutral"], bad: [] },
+            energy: { score: 4, good: ["Microsoft renewable programs"], bad: [] },
+            transparency: { score: 4, good: ["Microsoft sustainability reporting"], bad: [] },
+            labor: { score: 4, good: ["Great workplace"], bad: ["Some layoffs"] },
+            recycling: { score: 4, good: ["Office sustainability"], bad: [] }
+        },
+        badges: [], sources: [{ name: "LinkedIn (Microsoft)", url: "https://linkedin.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    pinterest: {
+        id: "pinterest", name: "Pinterest", sector: "Tech", greenScore: 62,
+        summary: "Climate Pledge signatory. Smaller tech footprint. Sustainability content promotion.",
+        categories: {
+            emissions: { score: 3, good: ["Climate Pledge signatory", "Net-zero by 2030"], bad: [] },
+            energy: { score: 4, good: ["Renewable energy"], bad: [] },
+            transparency: { score: 3, good: ["Impact reports"], bad: [] },
+            labor: { score: 4, good: ["Good culture"], bad: [] },
+            recycling: { score: 3, good: ["Office programs"], bad: [] }
+        },
+        badges: ["Climate Pledge"], sources: [{ name: "Pinterest", url: "https://pinterest.com/about" }], lastUpdated: "January 2026"
+    },
+
+    // ==================== FINAL 14 TO REACH 100 ====================
+    reddit: {
+        id: "reddit", name: "Reddit", sector: "Tech", greenScore: 55,
+        summary: "Limited sustainability disclosure. Carbon neutral goal. Office sustainability focus.",
+        categories: {
+            emissions: { score: 3, good: ["Carbon neutral goal"], bad: ["Limited disclosure"] },
+            energy: { score: 3, good: ["Some renewable"], bad: [] },
+            transparency: { score: 2, good: ["Some reporting"], bad: ["Less detailed"] },
+            labor: { score: 4, good: ["Tech benefits"], bad: [] },
+            recycling: { score: 3, good: ["Office programs"], bad: [] }
+        },
+        badges: [], sources: [{ name: "Reddit", url: "https://reddit.com" }], lastUpdated: "January 2026"
+    },
+    siemens: {
+        id: "siemens", name: "Siemens", sector: "Tech", greenScore: 72,
+        summary: "Carbon neutral operations since 2020. Strong on sustainable infrastructure tech. Science-based targets.",
+        categories: {
+            emissions: { score: 4, good: ["Carbon neutral since 2020", "Science-based targets"], bad: [] },
+            energy: { score: 4, good: ["100% renewable electricity"], bad: [] },
+            transparency: { score: 5, good: ["Detailed sustainability reports"], bad: [] },
+            labor: { score: 4, good: ["German standards"], bad: [] },
+            recycling: { score: 4, good: ["Industrial recycling", "Circular economy focus"], bad: [] }
+        },
+        badges: ["Carbon Neutral"], sources: [{ name: "Siemens Sustainability", url: "https://siemens.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    ge: {
+        id: "ge", name: "General Electric", sector: "Tech", greenScore: 55,
+        summary: "Aviation division high emissions but renewables strong. Splitting company changes outlook.",
+        categories: {
+            emissions: { score: 3, good: ["Renewable energy division", "Efficiency improvements"], bad: ["Aviation/gas turbines"] },
+            energy: { score: 3, good: ["Wind energy strong"], bad: ["Gas turbines"] },
+            transparency: { score: 4, good: ["Sustainability reports"], bad: [] },
+            labor: { score: 3, good: ["Legacy benefits"], bad: ["Layoffs"] },
+            recycling: { score: 3, good: ["Industrial programs"], bad: [] }
+        },
+        badges: [], sources: [{ name: "GE Sustainability", url: "https://ge.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    honda: {
+        id: "honda", name: "Honda", sector: "Automotive", greenScore: 56,
+        summary: "EV transition commitment. Net-zero by 2050. Motorcycles and lawn equipment add complexity.",
+        categories: {
+            emissions: { score: 3, good: ["Net-zero by 2050", "EV commitment"], bad: ["Slower EV transition"] },
+            energy: { score: 3, good: ["Renewable at plants"], bad: [] },
+            transparency: { score: 4, good: ["Sustainability reports"], bad: [] },
+            labor: { score: 4, good: ["Japanese standards"], bad: [] },
+            recycling: { score: 4, good: ["95% vehicle recyclability"], bad: [] }
+        },
+        badges: [], sources: [{ name: "Honda Sustainability", url: "https://honda.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    nissan: {
+        id: "nissan", name: "Nissan", sector: "Automotive", greenScore: 60,
+        summary: "Early Leaf EV pioneer. Ariya expansion. Net-zero by 2050. Battery recycling strong.",
+        categories: {
+            emissions: { score: 3, good: ["Net-zero by 2050", "EV pioneer with Leaf"], bad: [] },
+            energy: { score: 4, good: ["Renewable at plants"], bad: [] },
+            transparency: { score: 4, good: ["Sustainability reports"], bad: [] },
+            labor: { score: 3, good: ["Programs"], bad: ["Ghosn scandal legacy"] },
+            recycling: { score: 4, good: ["4R Energy battery recycling"], bad: [] }
+        },
+        badges: ["EV Pioneer"], sources: [{ name: "Nissan Sustainability", url: "https://nissan.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    dell: {
+        id: "dell", name: "Dell", sector: "Tech", greenScore: 68,
+        summary: "Strong on e-waste recycling. Ocean plastic in packaging. Science-based targets. Moonshot 2030.",
+        categories: {
+            emissions: { score: 4, good: ["Net-zero by 2050", "Moonshot 2030 goals"], bad: [] },
+            energy: { score: 4, good: ["75% renewable"], bad: [] },
+            transparency: { score: 4, good: ["ESG reports", "CDP reporting"], bad: [] },
+            labor: { score: 4, good: ["Benefits"], bad: [] },
+            recycling: { score: 5, good: ["Ocean plastic packaging", "Take-back programs", "2B lbs recycled"], bad: [] }
+        },
+        badges: ["Recycling Leader"], sources: [{ name: "Dell ESG", url: "https://dell.com/esg" }], lastUpdated: "January 2026"
+    },
+    hp: {
+        id: "hp", name: "HP Inc.", sector: "Tech", greenScore: 70,
+        summary: "Strong on sustainable printing. Ocean-bound plastics. Climate positive by 2040.",
+        categories: {
+            emissions: { score: 4, good: ["Climate positive by 2040", "Science-based targets"], bad: [] },
+            energy: { score: 4, good: ["100% renewable in ops goal"], bad: [] },
+            transparency: { score: 5, good: ["Living Progress Report", "CDP A-list"], bad: [] },
+            labor: { score: 4, good: ["Good programs"], bad: [] },
+            recycling: { score: 5, good: ["Ocean-bound plastics", "Cartridge recycling", "Product take-back"], bad: [] }
+        },
+        badges: ["CDP A-List"], sources: [{ name: "HP Sustainability", url: "https://hp.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    cisco: {
+        id: "cisco", name: "Cisco", sector: "Tech", greenScore: 72,
+        summary: "Net-zero by 2040. Strong on circular economy. Product take-back leader. CDP A-list.",
+        categories: {
+            emissions: { score: 4, good: ["Net-zero by 2040", "Science-based targets"], bad: [] },
+            energy: { score: 4, good: ["85% renewable"], bad: [] },
+            transparency: { score: 5, good: ["Purpose Report", "CDP A-list"], bad: [] },
+            labor: { score: 5, good: ["Best places to work"], bad: [] },
+            recycling: { score: 5, good: ["Circular design", "Takeback program", "Recycled materials"], bad: [] }
+        },
+        badges: ["CDP A-List"], sources: [{ name: "Cisco CSR", url: "https://cisco.com/csr" }], lastUpdated: "January 2026"
+    },
+    sap: {
+        id: "sap", name: "SAP", sector: "Tech", greenScore: 78,
+        summary: "Carbon neutral since 2023. 100% renewable. Strong enterprise sustainability software.",
+        categories: {
+            emissions: { score: 5, good: ["Carbon neutral since 2023", "Net-zero 2030"], bad: [] },
+            energy: { score: 5, good: ["100% renewable since 2014"], bad: [] },
+            transparency: { score: 5, good: ["Integrated Report", "CDP A-list"], bad: [] },
+            labor: { score: 5, good: ["Top employer"], bad: [] },
+            recycling: { score: 4, good: ["Circular solutions"], bad: [] }
+        },
+        badges: ["Carbon Neutral", "CDP A-List"], sources: [{ name: "SAP Sustainability", url: "https://sap.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    loreal: {
+        id: "loreal", name: "L'Oréal", sector: "Fashion", greenScore: 75,
+        summary: "Carbon neutral sites by 2025. Strong on sustainable sourcing. L'Oréal for the Future program.",
+        categories: {
+            emissions: { score: 4, good: ["Carbon neutral by 2025", "Science-based targets"], bad: [] },
+            energy: { score: 5, good: ["100% renewable in 2025"], bad: [] },
+            transparency: { score: 5, good: ["Detailed reports", "CDP A-list"], bad: [] },
+            labor: { score: 4, good: ["Good workplace"], bad: [] },
+            recycling: { score: 4, good: ["100% recyclable packaging goal", "Refillable lines"], bad: [] }
+        },
+        badges: ["CDP A-List"], sources: [{ name: "L'Oréal Sustainability", url: "https://loreal.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    redbull: {
+        id: "redbull", name: "Red Bull", sector: "Food & Beverage", greenScore: 50,
+        summary: "Aluminum can recyclability. Some renewable energy. But caffeine-based energy drinks model.",
+        categories: {
+            emissions: { score: 3, good: ["Some reduction targets"], bad: ["Extensive logistics"] },
+            energy: { score: 3, good: ["Some renewable"], bad: [] },
+            transparency: { score: 2, good: ["Some reporting"], bad: ["Less detailed"] },
+            labor: { score: 3, good: ["Sports culture"], bad: [] },
+            recycling: { score: 4, good: ["Aluminum cans = recyclable", "Can collection campaigns"], bad: [] }
+        },
+        badges: [], sources: [{ name: "Red Bull", url: "https://redbull.com" }], lastUpdated: "January 2026"
+    },
+    mondelez: {
+        id: "mondelez", name: "Mondelez", sector: "Food & Beverage", greenScore: 52,
+        summary: "Cocoa Life program. Net-zero by 2050. Oreo maker working on sustainability.",
+        categories: {
+            emissions: { score: 3, good: ["Net-zero by 2050", "Science-based targets"], bad: ["Large footprint"] },
+            energy: { score: 3, good: ["Renewable progress"], bad: [] },
+            transparency: { score: 4, good: ["ESG reports"], bad: [] },
+            labor: { score: 3, good: ["Cocoa Life farmer program"], bad: ["Supply chain challenges"] },
+            recycling: { score: 3, good: ["Recyclable packaging goal"], bad: ["Plastic still prevalent"] }
+        },
+        badges: [], sources: [{ name: "Mondelez Sustainability", url: "https://mondelezinternational.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    marriott: {
+        id: "marriott", name: "Marriott", sector: "Travel", greenScore: 48,
+        summary: "Serve 360 goals. Single-use plastic reduction. But hotels are energy intensive.",
+        categories: {
+            emissions: { score: 3, good: ["Net-zero by 2050", "Science-based targets"], bad: ["Energy intensive"] },
+            energy: { score: 3, good: ["Renewable progress"], bad: ["Franchise variability"] },
+            transparency: { score: 4, good: ["Serve 360 reports"], bad: [] },
+            labor: { score: 3, good: ["Training programs"], bad: ["Hospitality challenges"] },
+            recycling: { score: 3, good: ["Single-use plastic reduction"], bad: ["Hotel waste"] }
+        },
+        badges: [], sources: [{ name: "Marriott Serve 360", url: "https://marriott.com/serve360" }], lastUpdated: "January 2026"
+    },
+    hilton: {
+        id: "hilton", name: "Hilton", sector: "Travel", greenScore: 52,
+        summary: "Travel with Purpose. LightStay tracking. Net-zero by 2050. Leading hotel sustainability metrics.",
+        categories: {
+            emissions: { score: 3, good: ["Net-zero by 2050", "Science-based targets"], bad: ["Energy intensive"] },
+            energy: { score: 4, good: ["Renewable progress", "LED conversion"], bad: [] },
+            transparency: { score: 4, good: ["Travel with Purpose", "LightStay system"], bad: [] },
+            labor: { score: 4, good: ["Best places to work"], bad: [] },
+            recycling: { score: 3, good: ["Soap recycling", "Plastic reduction"], bad: ["Hotel waste challenges"] }
+        },
+        badges: [], sources: [{ name: "Hilton ESG", url: "https://hilton.com/travelwithpurpose" }], lastUpdated: "January 2026"
     }
 };
+
