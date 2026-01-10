@@ -195,6 +195,7 @@ function renderResults(data) {
     setTimeout(() => {
         window.GreenAnimations.animateGauge(data.greenScore);
         window.GreenAnimations.staggerCategoryAnimation();
+        window.GreenAnimations.animateBadges();
     }, 100);
 
     // Scroll to results

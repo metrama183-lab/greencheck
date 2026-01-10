@@ -10,43 +10,43 @@
     --bg-card: rgba(255, 255, 255, 0.03);
     --bg-card-hover: rgba(255, 255, 255, 0.06);
     --bg-glass: rgba(255, 255, 255, 0.05);
-    
+
     /* Green Palette */
     --green-100: #00ff88;
     --green-200: #00e67a;
     --green-300: #00cc6a;
     --green-glow: rgba(0, 255, 136, 0.3);
-    
+
     /* Red Palette */
     --red-100: #ff4757;
     --red-200: #ff3344;
     --red-glow: rgba(255, 71, 87, 0.3);
-    
+
     /* Yellow/Orange */
     --yellow-100: #ffa502;
     --orange-100: #ff7f50;
-    
+
     /* Accent */
     --accent-primary: #667eea;
     --accent-secondary: #764ba2;
     --accent-gradient: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
-    
+
     /* Text */
     --text-primary: #ffffff;
     --text-secondary: rgba(255, 255, 255, 0.7);
     --text-muted: rgba(255, 255, 255, 0.4);
-    
+
     /* Borders */
     --border-subtle: rgba(255, 255, 255, 0.1);
     --border-accent: rgba(102, 126, 234, 0.5);
-    
+
     /* Shadows */
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
     --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.4);
     --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.5);
     --shadow-glow-green: 0 0 40px var(--green-glow);
     --shadow-glow-red: 0 0 40px var(--red-glow);
-    
+
     /* Typography */
     --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     --font-xs: 0.75rem;
@@ -58,7 +58,7 @@
     --font-3xl: 2rem;
     --font-4xl: 2.5rem;
     --font-5xl: 3.5rem;
-    
+
     /* Spacing */
     --space-1: 0.25rem;
     --space-2: 0.5rem;
@@ -70,14 +70,14 @@
     --space-10: 2.5rem;
     --space-12: 3rem;
     --space-16: 4rem;
-    
+
     /* Border Radius */
     --radius-sm: 8px;
     --radius-md: 12px;
     --radius-lg: 16px;
     --radius-xl: 24px;
     --radius-full: 9999px;
-    
+
     /* Transitions */
     --transition-fast: 150ms ease;
     --transition-base: 250ms ease;
@@ -88,7 +88,9 @@
 /* ============================================
    Reset & Base
    ============================================ */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -151,7 +153,7 @@ input {
     height: 150%;
     top: -25%;
     left: -25%;
-    background: 
+    background:
         radial-gradient(ellipse at 20% 20%, rgba(102, 126, 234, 0.15) 0%, transparent 50%),
         radial-gradient(ellipse at 80% 80%, rgba(0, 255, 136, 0.1) 0%, transparent 50%),
         radial-gradient(ellipse at 50% 50%, rgba(118, 75, 162, 0.1) 0%, transparent 60%);
@@ -159,10 +161,23 @@ input {
 }
 
 @keyframes bgFloat {
-    0%, 100% { transform: translate(0, 0) rotate(0deg); }
-    25% { transform: translate(2%, 2%) rotate(1deg); }
-    50% { transform: translate(-1%, 3%) rotate(-1deg); }
-    75% { transform: translate(-2%, -1%) rotate(0.5deg); }
+
+    0%,
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    25% {
+        transform: translate(2%, 2%) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1%, 3%) rotate(-1deg);
+    }
+
+    75% {
+        transform: translate(-2%, -1%) rotate(0.5deg);
+    }
 }
 
 .bg-particles {
@@ -182,17 +197,22 @@ input {
 }
 
 @keyframes particleFloat {
-    0%, 100% { 
+
+    0%,
+    100% {
         transform: translateY(100vh) scale(0);
         opacity: 0;
     }
+
     10% {
         opacity: 0.3;
     }
+
     90% {
         opacity: 0.3;
     }
-    100% { 
+
+    100% {
         transform: translateY(-100px) scale(1);
         opacity: 0;
     }
@@ -231,8 +251,15 @@ input {
 }
 
 @keyframes leafBounce {
-    0%, 100% { transform: rotate(-5deg); }
-    50% { transform: rotate(5deg); }
+
+    0%,
+    100% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
 }
 
 .logo-text {
@@ -351,8 +378,15 @@ input {
 }
 
 @keyframes dropdownSlide {
-    from { opacity: 0; transform: translateY(-10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .autocomplete-item {
@@ -585,12 +619,13 @@ input {
 }
 
 @keyframes resultSlide {
-    from { 
-        opacity: 0; 
+    from {
+        opacity: 0;
         transform: translateY(30px);
     }
-    to { 
-        opacity: 1; 
+
+    to {
+        opacity: 1;
         transform: translateY(0);
     }
 }
@@ -691,13 +726,24 @@ input {
     stroke-linecap: round;
     transform: rotate(-90deg);
     transform-origin: center;
-    transition: stroke-dasharray 1.5s ease-out;
+    transition: stroke-dasharray 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.gauge-fill.excellent { stroke: var(--green-100); }
-.gauge-fill.good { stroke: var(--yellow-100); }
-.gauge-fill.needs-work { stroke: var(--orange-100); }
-.gauge-fill.poor { stroke: var(--red-100); }
+.gauge-fill.excellent {
+    stroke: var(--green-100);
+}
+
+.gauge-fill.good {
+    stroke: var(--yellow-100);
+}
+
+.gauge-fill.needs-work {
+    stroke: var(--orange-100);
+}
+
+.gauge-fill.poor {
+    stroke: var(--red-100);
+}
 
 .score-number {
     position: absolute;
@@ -713,10 +759,21 @@ input {
     line-height: 1;
 }
 
-.score-value.excellent { color: var(--green-100); }
-.score-value.good { color: var(--yellow-100); }
-.score-value.needs-work { color: var(--orange-100); }
-.score-value.poor { color: var(--red-100); }
+.score-value.excellent {
+    color: var(--green-100);
+}
+
+.score-value.good {
+    color: var(--yellow-100);
+}
+
+.score-value.needs-work {
+    color: var(--orange-100);
+}
+
+.score-value.poor {
+    color: var(--red-100);
+}
 
 .score-max {
     font-size: var(--font-lg);
@@ -740,10 +797,21 @@ input {
     margin-bottom: var(--space-2);
 }
 
-.score-title.excellent { color: var(--green-100); }
-.score-title.good { color: var(--yellow-100); }
-.score-title.needs-work { color: var(--orange-100); }
-.score-title.poor { color: var(--red-100); }
+.score-title.excellent {
+    color: var(--green-100);
+}
+
+.score-title.good {
+    color: var(--yellow-100);
+}
+
+.score-title.needs-work {
+    color: var(--orange-100);
+}
+
+.score-title.poor {
+    color: var(--red-100);
+}
 
 .score-description {
     color: var(--text-secondary);
@@ -972,16 +1040,31 @@ input {
     animation: scanPulse 2s ease-out infinite;
 }
 
-.scan-ring:nth-child(1) { width: 60px; height: 60px; animation-delay: 0s; }
-.scan-ring:nth-child(2) { width: 100px; height: 100px; animation-delay: 0.4s; }
-.scan-ring:nth-child(3) { width: 140px; height: 140px; animation-delay: 0.8s; }
+.scan-ring:nth-child(1) {
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+}
+
+.scan-ring:nth-child(2) {
+    width: 100px;
+    height: 100px;
+    animation-delay: 0.4s;
+}
+
+.scan-ring:nth-child(3) {
+    width: 140px;
+    height: 140px;
+    animation-delay: 0.8s;
+}
 
 @keyframes scanPulse {
-    0% { 
+    0% {
         transform: translate(-50%, -50%) scale(0.8);
         opacity: 1;
     }
-    100% { 
+
+    100% {
         transform: translate(-50%, -50%) scale(1.5);
         opacity: 0;
     }
@@ -997,8 +1080,15 @@ input {
 }
 
 @keyframes iconBounce {
-    0%, 100% { transform: translate(-50%, -50%) scale(1); }
-    50% { transform: translate(-50%, -50%) scale(1.1); }
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1.1);
+    }
 }
 
 .loading-text {
@@ -1059,8 +1149,13 @@ input {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 /* ============================================
@@ -1070,47 +1165,47 @@ input {
     .container {
         padding: var(--space-4);
     }
-    
+
     .header {
         padding: var(--space-8) 0 var(--space-6);
     }
-    
+
     .logo-text {
         font-size: var(--font-3xl);
     }
-    
+
     .tagline {
         font-size: var(--font-lg);
     }
-    
+
     .search-box {
         flex-wrap: wrap;
     }
-    
+
     .search-input {
         width: 100%;
         order: -1;
         margin-bottom: var(--space-3);
     }
-    
+
     .search-btn {
         width: 100%;
         justify-content: center;
     }
-    
+
     .score-gauge {
         width: 150px;
         height: 150px;
     }
-    
+
     .score-value {
         font-size: var(--font-4xl);
     }
-    
+
     .company-name-header {
         font-size: var(--font-2xl);
     }
-    
+
     .categories-grid {
         grid-template-columns: 1fr;
     }
@@ -1122,7 +1217,7 @@ input {
         overflow-x: auto;
         padding-bottom: var(--space-2);
     }
-    
+
     .footer-disclaimer {
         flex-direction: column;
         gap: var(--space-2);

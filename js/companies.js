@@ -99,16 +99,16 @@ window.COMPANIES_DB = {
         badges: [], controversies: ["Energy consumption", "Lack of transparency"], sources: [{ name: "OpenAI", url: "https://openai.com" }], lastUpdated: "January 2026"
     },
     nvidia: {
-        id: "nvidia", name: "NVIDIA", sector: "Tech", greenScore: 60,
-        summary: "GPU efficiency improvements but enabling massive AI compute expansion globally. Office operations carbon neutral.",
+        id: "nvidia", name: "NVIDIA", sector: "Tech", greenScore: 62,
+        summary: "100% renewable target by FY25. Emissions up 87% to 7.15M tonnes in 2024 due to AI boom. Blackwell GPUs 50x more efficient than CPUs.",
         categories: {
-            emissions: { score: 3, good: ["Office operations carbon neutral", "More efficient chip designs"], bad: ["Products enable massive global compute", "Scope 3 emissions enormous"] },
-            energy: { score: 3, good: ["HQ renewable powered"], bad: ["GPUs consume enormous power", "Enabling datacenter growth"] },
-            transparency: { score: 4, good: ["CSR reports published", "ESG disclosures"], bad: ["Product-use emissions not fully quantified"] },
+            emissions: { score: 3, good: ["Blackwell 50x more efficient than CPUs", "Targeting Scope 3 reduction"], bad: ["Emissions up 87% in 2024 (7.15M tonnes)", "AI boom driving massive growth"] },
+            energy: { score: 4, good: ["76% renewable FY24", "100% renewable by FY25 goal", "GPUs 50x more efficient for AI"], bad: ["Products enable massive compute globally"] },
+            transparency: { score: 4, good: ["FY25 Sustainability Report", "Product carbon footprints published"], bad: [] },
             labor: { score: 4, good: ["Top employer rankings", "Strong culture"], bad: ["Intense work environment"] },
-            recycling: { score: 3, good: ["E-waste programs"], bad: ["Rapid GPU upgrade cycles encourage waste"] }
+            recycling: { score: 3, good: ["E-waste programs"], bad: ["Rapid GPU upgrade cycles", "Rising demand = more waste"] }
         },
-        badges: [], sources: [{ name: "NVIDIA CSR", url: "https://nvidia.com/csr" }], lastUpdated: "January 2026"
+        badges: ["100% Renewable Goal FY25"], sources: [{ name: "NVIDIA FY25 Sustainability Report", url: "https://nvidia.com/sustainability" }], lastUpdated: "January 2026"
     },
     tesla: {
         id: "tesla", name: "Tesla", sector: "Automotive", greenScore: 74,
@@ -161,28 +161,28 @@ window.COMPANIES_DB = {
         badges: [], controversies: ["Greenwashing fine", "Labor exploitation", "Environmental harm"], sources: [{ name: "Shein 2024 Report", url: "https://sheingroup.com" }], lastUpdated: "January 2026"
     },
     hm: {
-        id: "hm", name: "H&M", sector: "Fashion", greenScore: 52,
-        summary: "Garment collecting program but still fast fashion. 85% recycled/sustainable materials goal. Faced greenwashing accusations.",
+        id: "hm", name: "H&M", sector: "Fashion", greenScore: 62,
+        summary: "41% Scope 1&2 reduction, 24% Scope 3 reduction vs 2019. 96% renewable electricity. 89% recycled/sustainable materials. Beating 2025 targets early.",
         categories: {
-            emissions: { score: 3, good: ["Climate positive by 2040 goal", "Reducing absolute emissions"], bad: ["Fast fashion model", "High production volumes"] },
-            energy: { score: 4, good: ["100% renewable in own operations", "Supplier engagement"], bad: ["Manufacturing in coal-heavy regions"] },
-            transparency: { score: 3, good: ["Annual sustainability reports"], bad: ["Greenwashing accusations", "Conscious collection criticized"] },
-            labor: { score: 3, good: ["Fair Living Wage strategy", "Supplier audits"], bad: ["Complex supply chain", "Living wage gaps"] },
-            recycling: { score: 4, good: ["Garment collecting since 2013", "Looop recycling machine", "Rental/resale pilots"], bad: ["Low actual recycling rate"] }
+            emissions: { score: 4, good: ["41% Scope 1&2 reduction vs 2019", "24% Scope 3 reduction", "Coal boilers down from 118 to 27"], bad: ["Fast fashion model remains"] },
+            energy: { score: 5, good: ["96% renewable electricity 2024", "100% renewable by 2030 goal"], bad: [] },
+            transparency: { score: 4, good: ["Annual sustainability reports", "Clear 2025/2030 targets"], bad: ["Historical greenwashing accusations"] },
+            labor: { score: 4, good: ["Fair Living Wage renewed", "Global Framework Agreement"], bad: ["Complex supply chain"] },
+            recycling: { score: 4, good: ["89% recycled/sustainable materials", "29.5% recycled (near 30% goal)", "54% plastic packaging reduction"], bad: ["Still fast fashion"] }
         },
-        badges: [], controversies: ["Greenwashing"], sources: [{ name: "H&M Sustainability", url: "https://hmgroup.com/sustainability" }], lastUpdated: "January 2026"
+        badges: ["96% Renewable"], sources: [{ name: "H&M 2024 Sustainability Report", url: "https://hmgroup.com/sustainability" }], lastUpdated: "January 2026"
     },
     adidas: {
-        id: "adidas", name: "Adidas", sector: "Fashion", greenScore: 65,
-        summary: "Strong on recycled materials (Parley ocean plastic). Climate neutral own operations. Working on full value chain decarbonization.",
+        id: "adidas", name: "Adidas", sector: "Fashion", greenScore: 68,
+        summary: "20% total emissions reduction in 2024 vs 2022. SBTi targets: 70% Scope 1&2, 42% Scope 3 by 2030. Nearly 100% recycled polyester. Parley partnership ended 2024.",
         categories: {
-            emissions: { score: 3, good: ["Climate neutral own operations", "30% reduction target by 2030"], bad: ["Supply chain emissions challenging"] },
-            energy: { score: 4, good: ["100% renewable own operations", "Supplier renewable program"], bad: ["Asia manufacturing footprint"] },
+            emissions: { score: 4, good: ["20% total emissions reduction 2024", "SBTi validated targets", "70% Scope 1&2 cut by 2030"], bad: [] },
+            energy: { score: 4, good: ["24% supplier renewable electricity", "VPPAs for US/Canada/Europe", "On-site solar projects"], bad: ["Some Asia manufacturing challenges"] },
             transparency: { score: 4, good: ["Detailed annual reports", "Science-based targets"], bad: [] },
             labor: { score: 3, good: ["Supplier compliance program", "Worker hotlines"], bad: ["Supply chain complexity"] },
-            recycling: { score: 4, good: ["Parley ocean plastic products", "Futurecraft.Loop concept", "Made to be Remade line"], bad: ["Scale limitations"] }
+            recycling: { score: 4, good: ["Nearly 100% recycled polyester", "100% certified cotton", "Circular economy focus"], bad: ["Parley partnership ended 2024"] }
         },
-        badges: ["Parley Partner"], sources: [{ name: "Adidas Sustainability", url: "https://adidas-group.com/sustainability" }], lastUpdated: "January 2026"
+        badges: ["SBTi Validated"], sources: [{ name: "Adidas Sustainability 2024", url: "https://adidas-group.com/sustainability" }], lastUpdated: "January 2026"
     },
 
     // ==================== FOOD & BEVERAGE SECTOR ====================
@@ -199,16 +199,16 @@ window.COMPANIES_DB = {
         badges: [], controversies: ["Plastic pollution", "Weakened targets"], sources: [{ name: "Coca-Cola Sustainability", url: "https://coca-colacompany.com/sustainability" }], lastUpdated: "January 2026"
     },
     starbucks: {
-        id: "starbucks", name: "Starbucks", sector: "Food & Beverage", greenScore: 55,
-        summary: "Greener Stores commitment. Working on reusable cups. Ethically sourced coffee. Dairy alternatives reducing footprint.",
+        id: "starbucks", name: "Starbucks", sector: "Food & Beverage", greenScore: 62,
+        summary: "77% renewable electricity globally. 9,400 Greener Stores (10K goal by 2025). 30% energy/water reduction per store. Net-zero by 2050.",
         categories: {
-            emissions: { score: 3, good: ["50% reduction target by 2030", "Greener Stores program"], bad: ["Dairy is major emission source", "Global supply chain"] },
-            energy: { score: 4, good: ["LEED certified stores", "Renewable energy investments"], bad: ["Franchise variability"] },
-            transparency: { score: 4, good: ["Annual Global Impact Report", "Ethically sourced coffee"], bad: [] },
+            emissions: { score: 3, good: ["50% reduction target by 2030", "9,400 Greener Stores", "Net-zero by 2050"], bad: ["Emissions +14% 2019-2023", "94% from Scope 3"] },
+            energy: { score: 4, good: ["77% renewable electricity", "100% US/Canada/EMEA/Japan renewable", "30% energy reduction per store"], bad: [] },
+            transparency: { score: 4, good: ["FY24 Global Impact Report", "Ethically sourced coffee"], bad: [] },
             labor: { score: 3, good: ["Partner benefits", "College tuition program"], bad: ["Union conflicts", "Scheduling issues"] },
-            recycling: { score: 3, good: ["Reusable cup initiatives", "Straw reduction"], bad: ["Single-use cups still dominant", "Recycling infrastructure gaps"] }
+            recycling: { score: 3, good: ["Reusable cup initiatives", "$60M annual savings from efficiency"], bad: ["Single-use cups still dominant"] }
         },
-        badges: ["Ethical Sourcing"], sources: [{ name: "Starbucks Global Impact", url: "https://starbucks.com/responsibility" }], lastUpdated: "January 2026"
+        badges: ["Greener Stores", "Ethical Sourcing"], sources: [{ name: "Starbucks FY24 Global Impact", url: "https://starbucks.com/responsibility" }], lastUpdated: "January 2026"
     },
     mcdonalds: {
         id: "mcdonalds", name: "McDonald's", sector: "Food & Beverage", greenScore: 42,
@@ -223,16 +223,16 @@ window.COMPANIES_DB = {
         badges: [], controversies: ["Beef emissions", "Labor practices"], sources: [{ name: "McDonald's Sustainability", url: "https://corporate.mcdonalds.com/sustainability" }], lastUpdated: "January 2026"
     },
     nestle: {
-        id: "nestle", name: "Nestlé", sector: "Food & Beverage", greenScore: 48,
-        summary: "Net-zero by 2050 target. Major water stewardship concerns. Deforestation-free supply chain goal. Packaging improvements ongoing.",
+        id: "nestle", name: "Nestlé", sector: "Food & Beverage", greenScore: 58,
+        summary: "MET 2025 TARGET EARLY: 20.38% emissions reduction vs 2018. 92% renewable electricity. 93.4% deforestation-free. AWS water certification.",
         categories: {
-            emissions: { score: 3, good: ["Net-zero by 2050", "20% reduction by 2025 target"], bad: ["Scope 3 from agriculture massive"] },
-            energy: { score: 3, good: ["Renewable energy progress", "Factory efficiency"], bad: ["Global manufacturing scale"] },
-            transparency: { score: 3, good: ["Annual sustainability reports", "CDP disclosure"], bad: ["Historical trust issues"] },
-            labor: { score: 3, good: ["Living wage roadmap", "Human rights due diligence"], bad: ["Child labor allegations in cocoa"] },
-            recycling: { score: 3, good: ["100% recyclable packaging goal", "Plastic reduction efforts"], bad: ["Single-use plastic still huge", "Water bottling criticism"] }
+            emissions: { score: 4, good: ["20.38% reduction (met 2025 target early)", "Net-zero by 2050", "50% reduction by 2030 goal"], bad: ["Scope 3 from agriculture still 95%"] },
+            energy: { score: 4, good: ["92% renewable electricity 2023", "100% renewable by 2025 goal"], bad: [] },
+            transparency: { score: 4, good: ["Annual CSV reports", "CDP disclosure"], bad: ["Historical trust issues"] },
+            labor: { score: 3, good: ["Living wage roadmap", "Human rights due diligence"], bad: ["Child labor legacy in cocoa"] },
+            recycling: { score: 4, good: ["93.4% deforestation-free", "AWS water certification by 2025", "31% water reduction since 2010"], bad: ["Water bottling criticism"] }
         },
-        badges: [], controversies: ["Water extraction", "Plastic pollution"], sources: [{ name: "Nestlé Sustainability", url: "https://nestle.com/sustainability" }], lastUpdated: "January 2026"
+        badges: ["2025 Target Met Early"], sources: [{ name: "Nestlé 2024 Sustainability Report", url: "https://nestle.com/sustainability" }], lastUpdated: "January 2026"
     },
 
     // ==================== RETAIL SECTOR ====================
@@ -249,56 +249,56 @@ window.COMPANIES_DB = {
         badges: ["Circular Economy Leader"], sources: [{ name: "IKEA Sustainability", url: "https://ikea.com/sustainability" }], lastUpdated: "January 2026"
     },
     walmart: {
-        id: "walmart", name: "Walmart", sector: "Retail", greenScore: 52,
-        summary: "Zero emissions by 2040 goal. Major renewable energy buyer. Project Gigaton for supplier emissions. Scale creates enormous footprint.",
+        id: "walmart", name: "Walmart", sector: "Retail", greenScore: 58,
+        summary: "PROJECT GIGATON EXCEEDED 6 YEARS EARLY: 1B+ tonnes avoided. 48.5% renewable. 18% Scope 1&2 reduction. Zero emissions by 2040.",
         categories: {
-            emissions: { score: 3, good: ["Zero emissions by 2040", "Project Gigaton (1 GT avoided)"], bad: ["Scale creates massive footprint", "Scope 3 challenging"] },
-            energy: { score: 4, good: ["50% renewable by 2025", "Major solar/wind investments"], bad: ["Some facilities still fossil"] },
-            transparency: { score: 3, good: ["ESG reports published", "CDP disclosure"], bad: ["Supply chain transparency limited"] },
+            emissions: { score: 4, good: ["Project Gigaton: 1B+ tonnes (6 years early!)", "18% Scope 1&2 reduction since 2015", "47% intensity reduction"], bad: ["Will miss 35% by 2025 target"] },
+            energy: { score: 4, good: ["48.5% renewable 2024", "166 MW onsite solar", "100% renewable by 2035 goal"], bad: ["Infrastructure limitations"] },
+            transparency: { score: 4, good: ["FY25 ESG Report", "CDP disclosure"], bad: [] },
             labor: { score: 2, good: ["Wage increases", "Training programs"], bad: ["Wage criticism", "Worker treatment concerns"] },
-            recycling: { score: 3, good: ["Plastic packaging reduction", "Food waste programs"], bad: ["Product waste from returns"] }
+            recycling: { score: 3, good: ["5,900 suppliers in Gigaton", "Plastic reduction"], bad: ["Product waste from returns"] }
         },
-        badges: ["Project Gigaton"], sources: [{ name: "Walmart ESG", url: "https://corporate.walmart.com/esg" }], lastUpdated: "January 2026"
+        badges: ["Project Gigaton Goal Exceeded"], sources: [{ name: "Walmart FY25 ESG Report", url: "https://corporate.walmart.com/esg" }], lastUpdated: "January 2026"
     },
 
     // ==================== ENERGY SECTOR ====================
     shell: {
-        id: "shell", name: "Shell", sector: "Energy", greenScore: 28,
-        summary: "Net-zero 2050 goal but 91% investments still fossil fuels. 31% operational emission reduction. Weakened 2030 targets. Greenwashing accusations.",
+        id: "shell", name: "Shell", sector: "Energy", greenScore: 30,
+        summary: "60% progress on 2030 operational cut. 9% net carbon intensity reduction. but increased oil production plan. $10-15B low-carbon investment 2023-25.",
         categories: {
-            emissions: { score: 2, good: ["31% operational reduction since 2016", "6.3% carbon intensity reduction"], bad: ["91% investments in fossil fuels", "Weakened 2030 targets"] },
-            energy: { score: 2, good: ["$5.6B low-carbon investment 2023", "EV charging expansion"], bad: ["Halted offshore wind", "Cut low-carbon spending 8%"] },
-            transparency: { score: 3, good: ["Energy Transition Strategy published", "CDP reporting"], bad: ["Greenwashing accusations", "Misleading advertising claims"] },
+            emissions: { score: 3, good: ["60% progress on 2030 operational target", "9% net carbon intensity reduction 2024", "Ended routine flaring Jan 2025"], bad: ["Increasing oil/gas production", "15-20% Scope 3 cut is weak target"] },
+            energy: { score: 2, good: ["$10-15B low-carbon investment 2023-25", "EV charging expansion"], bad: ["Scaled back offshore wind", "Still 77% fossil fuel focus"] },
+            transparency: { score: 3, good: ["Energy Transition Strategy 2024", "CDP reporting"], bad: ["Greenwashing accusations", "Ambitious rhetoric vs action gap"] },
             labor: { score: 3, good: ["Safety programs", "Transition support"], bad: ["Layoffs in green divisions"] },
             recycling: { score: 2, good: ["Some circular initiatives"], bad: ["Oil industry waste", "Legacy pollution"] }
         },
-        badges: [], controversies: ["Greenwashing", "Climate litigation", "Fossil fuel expansion"], sources: [{ name: "Shell Energy Transition", url: "https://shell.com/sustainability" }], lastUpdated: "January 2026"
+        badges: [], controversies: ["Greenwashing", "Climate litigation", "Fossil fuel expansion"], sources: [{ name: "Shell Energy Transition 2024", url: "https://shell.com/sustainability" }], lastUpdated: "January 2026"
     },
     bp: {
-        id: "bp", name: "BP", sector: "Energy", greenScore: 25,
-        summary: "Abandoned 2030 production cuts. 38% Scope 1&2 reduction but absolute emissions rose in 2024. 97% investments fossil fuels per Greenpeace.",
+        id: "bp", name: "BP", sector: "Energy", greenScore: 22,
+        summary: "ABANDONED net-zero production target. Cutting renewables by $5B/year. 38% operational reduction but emissions rose 4.7% in 2024. $10B/year fossil fuels.",
         categories: {
-            emissions: { score: 2, good: ["38% operational reduction vs 2019", "Net-zero 2050 goal"], bad: ["Abandoned 2030 production target", "Scope 1 rose to 32.8 MtCO2e"] },
-            energy: { score: 2, good: ["Lightsource bp: 4.4 TWh renewables", "3 GW assets developed"], bad: ["97% fossil fuel investment", "Reversed climate commitments"] },
-            transparency: { score: 3, good: ["Annual Sustainability Report"], bad: ["Shifting goalposts", "Disputed environmental claims"] },
+            emissions: { score: 2, good: ["38% operational reduction vs 2019", "Net-zero Scope 1&2 by 2050"], bad: ["Abandoned Scope 3 targets", "Emissions rose 4.7% in 2024", "2.3-2.5M bpd oil target by 2030"] },
+            energy: { score: 1, good: ["Lightsource bp: 4.4 TWh renewables"], bad: ["Cutting renewables $5B/year", "$10B/year in fossil fuels", "Called energy transition 'misplaced'"] },
+            transparency: { score: 3, good: ["2024 Sustainability Report"], bad: ["Reversed climate commitments", "Shifting goalposts"] },
             labor: { score: 3, good: ["Safety culture", "Just transition programs"], bad: ["Workforce reductions"] },
             recycling: { score: 2, good: ["Some circular projects"], bad: ["Oil industry legacy"] }
         },
-        badges: [], controversies: ["Abandoned climate targets", "Deepwater Horizon legacy"], sources: [{ name: "BP Sustainability", url: "https://bp.com/sustainability" }], lastUpdated: "January 2026"
+        badges: [], controversies: ["Abandoned climate targets", "Deepwater Horizon legacy", "Fossil fuel pivot"], sources: [{ name: "BP 2024 Sustainability", url: "https://bp.com/sustainability" }], lastUpdated: "January 2026"
     },
 
     // ==================== AUTOMOTIVE SECTOR ====================
     toyota: {
-        id: "toyota", name: "Toyota", sector: "Automotive", greenScore: 58,
-        summary: "World's largest automaker by volume. Hybrid pioneer but slow on full EVs. Net-zero by 2050. Hydrogen investments.",
+        id: "toyota", name: "Toyota", sector: "Automotive", greenScore: 62,
+        summary: "32% Scope 1&2 reduction FY25. 43% electrified US sales (beat 40% target). 83% models have electrified option. Carbon neutral by 2035 (NA).",
         categories: {
-            emissions: { score: 3, good: ["Net-zero by 2050", "Hybrid technology leader"], bad: ["Slow EV transition", "Lobbying against EV mandates"] },
-            energy: { score: 3, good: ["Factory efficiency", "Some renewables"], bad: ["Japan grid coal-heavy"] },
-            transparency: { score: 4, good: ["Environmental reports", "CDP disclosure"], bad: ["EV strategy unclear"] },
+            emissions: { score: 4, good: ["32% Scope 1&2 reduction FY25 vs 2019", "Carbon neutral by 2035 (NA)", "68% reduction target by 2035"], bad: ["Cut 2026 EV target to 1M from 1.5M"] },
+            energy: { score: 3, good: ["35% renewable electricity 2025", "45% renewable by FY26 goal"], bad: ["Japan grid coal-heavy"] },
+            transparency: { score: 4, good: ["Annual Environmental Reports", "SBTi validated targets"], bad: [] },
             labor: { score: 4, good: ["Strong worker loyalty", "Training programs"], bad: [] },
-            recycling: { score: 4, good: ["Battery recycling", "End-of-life vehicle programs"], bad: ["Scale challenges"] }
+            recycling: { score: 4, good: ["Battery recycling", "End-of-life programs", "NC battery plant 2025"], bad: [] }
         },
-        badges: ["Hybrid Pioneer"], sources: [{ name: "Toyota Sustainability", url: "https://toyota.com/sustainability" }], lastUpdated: "January 2026"
+        badges: ["Hybrid Pioneer", "SBTi Validated"], sources: [{ name: "Toyota 2025 Sustainability Report", url: "https://toyota.com/sustainability" }], lastUpdated: "January 2026"
     },
     volkswagen: {
         id: "volkswagen", name: "Volkswagen", sector: "Automotive", greenScore: 55,
@@ -353,16 +353,16 @@ window.COMPANIES_DB = {
         badges: [], sources: [{ name: "Disney CSR", url: "https://disney.com/impact" }], lastUpdated: "January 2026"
     },
     samsung: {
-        id: "samsung", name: "Samsung", sector: "Tech", greenScore: 58,
-        summary: "Net-zero by 2050. Major renewable energy expansion in Korea. E-waste challenges from massive device volumes.",
+        id: "samsung", name: "Samsung", sector: "Tech", greenScore: 65,
+        summary: "DX Division 93.4% renewable, net-zero by 2030. DS Division net-zero by 2050. 25% emissions cut 2018-2023. Carbon Trust Triple Standard.",
         categories: {
-            emissions: { score: 3, good: ["Net-zero by 2050", "Factory efficiency programs"], bad: ["Massive manufacturing footprint"] },
-            energy: { score: 3, good: ["100% renewable at key sites", "RE100 member"], bad: ["Korea grid still coal-heavy"] },
-            transparency: { score: 4, good: ["Sustainability reports", "CDP A-list"], bad: [] },
+            emissions: { score: 4, good: ["25% emissions cut 2018-2023", "DS: 11.6% Scope 1&2 cut 2023", "Net-zero 2050 enterprise-wide"], bad: ["Massive semiconductor footprint"] },
+            energy: { score: 4, good: ["DX: 93.4% renewable 2024", "DS: 100% renewable intl sites", "RE100 member"], bad: ["Korea grid still coal-heavy"] },
+            transparency: { score: 5, good: ["Carbon Trust Triple Standard", "CDP A-list", "Detailed reports"], bad: [] },
             labor: { score: 3, good: ["Safety improvements"], bad: ["Historical labor issues"] },
             recycling: { score: 3, good: ["Galaxy Upcycling", "Take-back programs"], bad: ["Massive device volumes = e-waste"] }
         },
-        badges: ["RE100"], sources: [{ name: "Samsung Sustainability", url: "https://samsung.com/sustainability" }], lastUpdated: "January 2026"
+        badges: ["RE100", "Carbon Trust Triple Standard"], sources: [{ name: "Samsung 2025 Sustainability Report", url: "https://samsung.com/sustainability" }], lastUpdated: "January 2026"
     },
     intel: {
         id: "intel", name: "Intel", sector: "Tech", greenScore: 68,
@@ -1237,6 +1237,128 @@ window.COMPANIES_DB = {
             recycling: { score: 3, good: ["Soap recycling", "Plastic reduction"], bad: ["Hotel waste challenges"] }
         },
         badges: [], sources: [{ name: "Hilton ESG", url: "https://hilton.com/travelwithpurpose" }], lastUpdated: "January 2026"
+    },
+
+    // ==================== BATCH 2: 10 NEW COMPANIES (101-110) ====================
+    colgate: {
+        id: "colgate", name: "Colgate-Palmolive", sector: "Consumer Goods", greenScore: 72,
+        summary: "Net-zero by 2040 target. 52% renewable electricity (2024). 31% emissions reduction on track. 100% renewable US/EU by 2025 via VPPAs.",
+        categories: {
+            emissions: { score: 4, good: ["Net-zero by 2040", "42% reduction by 2030 target", "31% reduction achieved (on track)"], bad: ["Scope 3 from consumer use"] },
+            energy: { score: 4, good: ["52% renewable electricity 2024", "100% renewable goal by 2030", "Wind VPPA Europe 60% coverage", "Solar VPPA Texas 100% US coverage"], bad: [] },
+            transparency: { score: 4, good: ["Annual Sustainability Report", "UN SDG alignment"], bad: [] },
+            labor: { score: 4, good: ["Strong benefits", "Diversity programs"], bad: [] },
+            recycling: { score: 4, good: ["Recyclable packaging focus", "Waste reduction"], bad: ["Plastic tube waste"] }
+        },
+        badges: ["SBTi Approved"], sources: [{ name: "Colgate-Palmolive 2024 Sustainability Report", url: "https://colgatepalmolive.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    threemm: {
+        id: "threemm", name: "3M", sector: "Industrial", greenScore: 68,
+        summary: "59% Scope 1&2 reduction since 2019. 56% renewable electricity. Carbon neutral by 2050. Pollution Prevention Pays saved $1.4B.",
+        categories: {
+            emissions: { score: 4, good: ["59% Scope 1&2 reduction (2024)", "30.7% Scope 3 reduction since 2021", "Carbon neutral by 2050"], bad: ["PFAS legacy issues"] },
+            energy: { score: 4, good: ["56% renewable electricity 2024", "100% renewable by 2050 goal", "Exceeded 2025 target early"], bad: [] },
+            transparency: { score: 4, good: ["SBTi 1.5°C validated", "Global Impact Report"], bad: ["PFAS litigation ongoing"] },
+            labor: { score: 3, good: ["Strong benefits"], bad: ["Layoffs", "PFAS health concerns"] },
+            recycling: { score: 4, good: ["98M lbs virgin plastic reduced", "Pollution Prevention Pays program", "Water purification tech"], bad: [] }
+        },
+        badges: ["SBTi 1.5°C"], controversies: ["PFAS litigation"], sources: [{ name: "3M 2025 Global Impact Report", url: "https://3m.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    pg: {
+        id: "pg", name: "Procter & Gamble", sector: "Consumer Goods", greenScore: 75,
+        summary: "Net-zero by 2040. 99%+ renewable electricity globally. 65% Scope 1&2 reduction by 2030 target. Carbon neutral decade (2020-2030).",
+        categories: {
+            emissions: { score: 4, good: ["Net-zero by 2040", "65% Scope 1&2 reduction by 2030", "40% Scope 3 per unit by 2030", "Carbon neutral decade commitment"], bad: ["85% emissions from consumer use"] },
+            energy: { score: 5, good: ["99%+ renewable electricity globally", "Wind/solar/geothermal projects"], bad: [] },
+            transparency: { score: 5, good: ["Detailed Citizenship Report", "Science-based targets"], bad: [] },
+            labor: { score: 4, good: ["Strong benefits", "DEI programs"], bad: [] },
+            recycling: { score: 4, good: ["100% recyclable packaging by 2030", "50% virgin plastic reduction goal"], bad: ["Plastic packaging still prevalent"] }
+        },
+        badges: ["SBTi Approved", "99% Renewable"], sources: [{ name: "P&G 2024 Citizenship Report", url: "https://pg.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    kellanova: {
+        id: "kellanova", name: "Kellanova", sector: "Food & Beverage", greenScore: 58,
+        summary: "Former Kellogg Company. 31% Scope 1&2 reduction since 2015. 45% reduction target by 2030. 40% renewable electricity.",
+        categories: {
+            emissions: { score: 3, good: ["31% Scope 1&2 reduction since 2015", "45% reduction by 2030 target", "15% Scope 3 reduction goal"], bad: ["Agriculture emissions challenging"] },
+            energy: { score: 3, good: ["40% renewable electricity", "100% renewable by 2050 goal"], bad: ["Progress needed"] },
+            transparency: { score: 4, good: ["Better Days Promise", "UN SDG alignment"], bad: [] },
+            labor: { score: 4, good: ["Farmer support (485K+)", "Training programs"], bad: [] },
+            recycling: { score: 4, good: ["100% recyclable packaging by 2025 goal", "76% recyclable achieved", "50% food waste reduction target"], bad: [] }
+        },
+        badges: [], sources: [{ name: "Kellanova Better Days Report", url: "https://kellanova.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    underarmour: {
+        id: "underarmour", name: "Under Armour", sector: "Fashion", greenScore: 48,
+        summary: "30% emissions reduction by 2030 target. Net-zero by 2050. 80% renewable by 2025. SBTi approved but targets not 1.5°C aligned.",
+        categories: {
+            emissions: { score: 3, good: ["30% reduction by 2030 (SBTi)", "Net-zero by 2050"], bad: ["Emissions up 12% vs 2021", "97% from Scope 3", "Targets below 1.5°C pace"] },
+            energy: { score: 3, good: ["80% renewable by 2025 goal", "100% renewable by 2030"], bad: ["No supplier renewable target"] },
+            transparency: { score: 3, good: ["Sustainability & Impact Report"], bad: ["Climate strategy concerns raised"] },
+            labor: { score: 3, good: ["Supplier audits"], bad: ["Supply chain oversight"] },
+            recycling: { score: 3, good: ["Some recycled materials"], bad: ["Limited circular programs"] }
+        },
+        badges: [], controversies: ["Climate target concerns"], sources: [{ name: "Under Armour 2023 Sustainability Report", url: "https://underarmour.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    asics: {
+        id: "asics", name: "ASICS", sector: "Fashion", greenScore: 78,
+        summary: "43% CO2 reduction vs 2015. First sporting goods company SBTi certified. Net-zero by 2050. NIMBUS MIRAI 57% lower emissions than industry.",
+        categories: {
+            emissions: { score: 4, good: ["43% CO2 reduction vs 2015", "First SBTi sporting goods company", "63% reduction by 2030 goal", "Net-zero by 2050"], bad: [] },
+            energy: { score: 4, good: ["37% renewable electricity", "100% supplier renewable plans"], bad: ["Progress needed"] },
+            transparency: { score: 5, good: ["CDP Climate A-List 2024", "VISION2030 strategy"], bad: [] },
+            labor: { score: 4, good: ["Strong workplace culture"], bad: [] },
+            recycling: { score: 5, good: ["NIMBUS MIRAI recyclable shoe", "50%+ recycled polyester", "Global take-back program", "95K+ reforestation participants"], bad: [] }
+        },
+        badges: ["CDP A-List", "SBTi Certified"], sources: [{ name: "ASICS 2024 Sustainability Report", url: "https://asics.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    newbalance: {
+        id: "newbalance", name: "New Balance", sector: "Fashion", greenScore: 65,
+        summary: "34% Scope 1&2 reduction in 2024. 90% renewable electricity. SBTi 1.5°C approved. 60% reduction goal by 2030. Scope 3 challenging.",
+        categories: {
+            emissions: { score: 4, good: ["34% Scope 1&2 reduction 2024", "SBTi 1.5°C approved", "60% reduction by 2030 goal"], bad: ["Scope 3 up 27%", "50% Scope 3 target not on track"] },
+            energy: { score: 4, good: ["90% renewable electricity 2023", "100% renewable by 2025 goal"], bad: [] },
+            transparency: { score: 4, good: ["CDP B rating 2024", "Sustainability Report"], bad: [] },
+            labor: { score: 4, good: ["Made in USA line", "Worker programs"], bad: [] },
+            recycling: { score: 4, good: ["Zero waste to landfill goal", "50% recycled polyester by 2025", "100% preferred materials goal"], bad: [] }
+        },
+        badges: ["SBTi 1.5°C"], sources: [{ name: "New Balance 2024 Sustainability Report", url: "https://newbalance.com/sustainability" }], lastUpdated: "January 2026"
+    },
+    reebok: {
+        id: "reebok", name: "Reebok", sector: "Fashion", greenScore: 35,
+        summary: "Limited sustainability disclosure post-ownership change. 0% decarbonization score (Aug 2024). Sustainable by 2030 goal. REE-grow/REE-cycle lines.",
+        categories: {
+            emissions: { score: 2, good: ["Some reduction targets"], bad: ["0% decarbonization score", "No Scope 1-3 public data", "Ownership transition issues"] },
+            energy: { score: 2, good: ["Partner requirements"], bad: ["No renewable targets disclosed"] },
+            transparency: { score: 1, good: ["Some product info"], bad: ["No comprehensive report", "Greenwashing concerns", "Missing environmental data"] },
+            labor: { score: 3, good: ["Partner standards"], bad: ["Supply chain opacity"] },
+            recycling: { score: 3, good: ["Cotton + Corn collection", "REE-grow organic materials", "REE-cycle 30%+ recycled"], bad: ["Still virgin synthetic reliance"] }
+        },
+        badges: [], controversies: ["Greenwashing concerns", "Transparency gaps"], sources: [{ name: "Reebok", url: "https://reebok.com" }], lastUpdated: "January 2026"
+    },
+    skechers: {
+        id: "skechers", name: "Skechers", sector: "Fashion", greenScore: 42,
+        summary: "88,303 tCO2e operational emissions 2024 (up 10%). No Scope 3 disclosure. Our Planet Matters = 2.5% of products. TIME World's Best 2025.",
+        categories: {
+            emissions: { score: 2, good: ["Third-party emissions assessment"], bad: ["Emissions up 10% in 2024", "No Scope 3 disclosure", "No reduction targets"] },
+            energy: { score: 2, good: ["Some efficiency measures"], bad: ["No renewable targets"] },
+            transparency: { score: 3, good: ["Impact Report 2024", "TIME World's Best 2025"], bad: ["No Scope 3 breakdown", "Limited targets"] },
+            labor: { score: 3, good: ["Programs"], bad: [] },
+            recycling: { score: 3, good: ["93% recyclable shoeboxes", "96% recycled cartons", "Nature Conservancy $800K"], bad: ["OPM only 2.5% of products"] }
+        },
+        badges: [], controversies: ["Emissions increasing", "Limited climate action"], sources: [{ name: "Skechers 2024 Impact Report", url: "https://skechers.com/impact" }], lastUpdated: "January 2026"
+    },
+    ralphlauren: {
+        id: "ralphlauren", name: "Ralph Lauren", sector: "Fashion", greenScore: 82,
+        summary: "34% emissions reduction achieved (met 2030 target 5 years early). 100% renewable electricity achieved 2025. 98% sustainable materials FY25.",
+        categories: {
+            emissions: { score: 5, good: ["34% emissions reduction vs FY20", "Met 2030 target 5 years early", "Rolling 5-year milestones", "Coal phase-out in supply chain"], bad: [] },
+            energy: { score: 5, good: ["100% renewable electricity achieved 2025", "RE100 member", "Energy efficiency investments"], bad: [] },
+            transparency: { score: 5, good: ["Timeless by Design strategy", "Global Citizenship Report"], bad: [] },
+            labor: { score: 4, good: ["Supplier standards"], bad: [] },
+            recycling: { score: 5, good: ["98% sustainable materials FY25", "Denim recycling program", "Repair service pilot", "Ralph Lauren Vintage", "C2C certified products"], bad: [] }
+        },
+        badges: ["100% Renewable", "2030 Target Met Early"], sources: [{ name: "Ralph Lauren 2025 Sustainability Report", url: "https://ralphlauren.com/sustainability" }], lastUpdated: "January 2026"
     }
 };
 
