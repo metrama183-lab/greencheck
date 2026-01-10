@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="GreenCheck - Instantly verify if a company is truly sustainable or just greenwashing. Search any brand and get a clear sustainability score.">
-    <meta name="keywords" content="sustainability, green, eco-friendly, greenwashing, company sustainability, ESG, carbon footprint">
+    <meta name="description"
+        content="GreenCheck - Instantly verify if a company is truly sustainable or just greenwashing. Search any brand and get a clear sustainability score.">
+    <meta name="keywords"
+        content="sustainability, green, eco-friendly, greenwashing, company sustainability, ESG, carbon footprint">
     <meta name="author" content="GreenCheck Team">
-    
+
     <title>GreenCheck - Is This Company Really Green?</title>
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css">
-    
+
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
 </head>
+
 <body>
     <!-- Animated Background -->
     <div class="bg-animation">
@@ -31,12 +37,42 @@
     <div class="container">
         <!-- Header -->
         <header class="header">
-            <div class="logo">
-                <span class="logo-icon">🌿</span>
-                <span class="logo-text">GreenCheck</span>
+            <div class="header-top">
+                <div class="logo">
+                    <span class="logo-icon">🌿</span>
+                    <span class="logo-text">GreenCheck</span>
+                </div>
+                <button class="settings-btn" id="settingsBtn" title="API Settings">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path
+                            d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                        </path>
+                    </svg>
+                </button>
             </div>
             <p class="tagline">Is this company <span class="highlight">really</span> green?</p>
         </header>
+
+        <!-- API Key Modal -->
+        <div class="api-modal hidden" id="apiModal">
+            <div class="api-modal-content">
+                <button class="api-modal-close" id="apiModalClose">×</button>
+                <h2>🔑 AI API Settings</h2>
+                <p class="api-modal-desc">Enter your Groq API key to enable AI-powered analysis for any company.</p>
+                <div class="api-input-group">
+                    <input type="password" id="apiKeyInput" class="api-input" placeholder="gsk_xxxxxxxxxxxxx">
+                    <button class="api-toggle-visibility" id="toggleApiVisibility">👁️</button>
+                </div>
+                <p class="api-help">Get a free key at <a href="https://console.groq.com/keys"
+                        target="_blank">console.groq.com/keys</a></p>
+                <div class="api-modal-buttons">
+                    <button class="api-save-btn" id="saveApiKey">Save Key</button>
+                    <button class="api-clear-btn" id="clearApiKey">Clear</button>
+                </div>
+                <p class="api-status" id="apiStatus"></p>
+            </div>
+        </div>
 
         <!-- Search Section -->
         <section class="search-section">
@@ -46,13 +82,8 @@
                         <circle cx="11" cy="11" r="8"></circle>
                         <path d="M21 21l-4.35-4.35"></path>
                     </svg>
-                    <input 
-                        type="text" 
-                        id="searchInput" 
-                        class="search-input" 
-                        placeholder="Search any company... (e.g., Apple, Nike, Amazon)"
-                        autocomplete="off"
-                    >
+                    <input type="text" id="searchInput" class="search-input"
+                        placeholder="Search any company... (e.g., Apple, Nike, Amazon)" autocomplete="off">
                     <button class="search-btn" id="searchBtn">
                         <span>Check</span>
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -63,7 +94,7 @@
                 <!-- Autocomplete Dropdown -->
                 <div class="autocomplete-dropdown" id="autocomplete"></div>
             </div>
-            
+
             <!-- Popular Searches -->
             <div class="popular-searches">
                 <span class="popular-label">Popular:</span>
@@ -133,8 +164,8 @@
         <footer class="footer">
             <div class="footer-content">
                 <p class="footer-text">
-                    Data sourced from <a href="https://www.cdp.net" target="_blank">CDP</a>, 
-                    <a href="https://www.bcorporation.net" target="_blank">B Corp</a>, 
+                    Data sourced from <a href="https://www.cdp.net" target="_blank">CDP</a>,
+                    <a href="https://www.bcorporation.net" target="_blank">B Corp</a>,
                     corporate sustainability reports, and verified public sources.
                 </p>
                 <p class="footer-disclaimer">
@@ -152,4 +183,5 @@
     <script src="js/animations.js"></script>
     <script src="js/app.js"></script>
 </body>
+
 </html>

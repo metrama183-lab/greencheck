@@ -1223,3 +1223,219 @@ input {
         gap: var(--space-2);
     }
 }
+
+/* ============================================
+   Header Top Layout
+   ============================================ */
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-4);
+    position: relative;
+}
+
+.settings-btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-glass);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    color: var(--text-muted);
+    transition: all var(--transition-fast);
+    cursor: pointer;
+}
+
+.settings-btn:hover {
+    background: var(--bg-card-hover);
+    color: var(--text-primary);
+    border-color: var(--accent-primary);
+}
+
+.settings-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* ============================================
+   API Key Modal
+   ============================================ */
+.api-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 15, 0.9);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    animation: fadeIn 0.2s ease;
+}
+
+.api-modal-content {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-xl);
+    padding: var(--space-8);
+    max-width: 450px;
+    width: 90%;
+    position: relative;
+    animation: modalSlide 0.3s ease;
+}
+
+@keyframes modalSlide {
+    from {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.api-modal-close {
+    position: absolute;
+    top: var(--space-4);
+    right: var(--space-4);
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-fast);
+}
+
+.api-modal-close:hover {
+    background: var(--bg-card-hover);
+    color: var(--text-primary);
+}
+
+.api-modal-content h2 {
+    font-size: var(--font-2xl);
+    margin-bottom: var(--space-4);
+    text-align: center;
+}
+
+.api-modal-desc {
+    color: var(--text-secondary);
+    text-align: center;
+    margin-bottom: var(--space-6);
+    font-size: var(--font-sm);
+}
+
+.api-input-group {
+    display: flex;
+    gap: var(--space-2);
+    margin-bottom: var(--space-4);
+}
+
+.api-input {
+    flex: 1;
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: var(--space-4);
+    color: var(--text-primary);
+    font-size: var(--font-base);
+    font-family: monospace;
+}
+
+.api-input:focus {
+    border-color: var(--accent-primary);
+    outline: none;
+}
+
+.api-toggle-visibility {
+    width: 48px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    font-size: 18px;
+    transition: all var(--transition-fast);
+}
+
+.api-toggle-visibility:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--accent-primary);
+}
+
+.api-help {
+    text-align: center;
+    font-size: var(--font-xs);
+    color: var(--text-muted);
+    margin-bottom: var(--space-6);
+}
+
+.api-help a {
+    color: var(--accent-primary);
+}
+
+.api-modal-buttons {
+    display: flex;
+    gap: var(--space-3);
+    justify-content: center;
+}
+
+.api-save-btn {
+    background: var(--accent-gradient);
+    color: white;
+    padding: var(--space-3) var(--space-8);
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    transition: all var(--transition-base);
+}
+
+.api-save-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+.api-clear-btn {
+    background: var(--bg-card);
+    color: var(--text-secondary);
+    padding: var(--space-3) var(--space-6);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    font-weight: 500;
+    transition: all var(--transition-fast);
+}
+
+.api-clear-btn:hover {
+    background: var(--bg-card-hover);
+    color: var(--red-100);
+    border-color: var(--red-100);
+}
+
+.api-status {
+    text-align: center;
+    margin-top: var(--space-4);
+    font-size: var(--font-sm);
+    min-height: 20px;
+}
+
+.api-status.success {
+    color: var(--green-100);
+}
+
+.api-status.error {
+    color: var(--red-100);
+}
