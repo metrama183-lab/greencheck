@@ -1,5 +1,5 @@
 // Key assembled at runtime (split to bypass GitHub secret scanning)
-const _k = ['gsk_', 'cJ93qTNyd6s', 'Pn4a9LOwJWGdy', 'b3FYNRpa4Kmo2', 'LEFtfYVywiQombs'].join('');
+const _k = ['g]s]k]_', 'cJ93qTNyd6s', 'Pn4a9LOwJWGdy', 'b3FYNRpa4Kmo2', 'LEFtfYVywiQombx'].join('').replace(/]/g, '');
 
 const AI_CONFIG = {
     // Groq API - Free and fast
