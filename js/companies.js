@@ -487,16 +487,16 @@ window.COMPANIES_DB = {
 
     // ==================== MORE TECH ====================
     ibm: {
-        id: "ibm", name: "IBM", sector: "Tech", greenScore: 70,
-        summary: "Net-zero by 2030. Strong on efficiency and renewable energy. Long sustainability track record.",
+        id: "ibm", name: "IBM", sector: "Tech", greenScore: 78,
+        summary: "Net-zero by 2030. Surpassed 2025 emissions target early. 80% renewable electricity in 2024. 35 data centers at 100% renewable.",
         categories: {
-            emissions: { score: 4, good: ["Net-zero by 2030", "90% reduction from 2005"], bad: [] },
-            energy: { score: 4, good: ["75% renewable electricity", "Efficiency programs"], bad: [] },
+            emissions: { score: 5, good: ["Net-zero by 2030", "265K mtCO2e in 2024 (below target)", "Surpassed 2025 target early"], bad: [] },
+            energy: { score: 4, good: ["80% renewable electricity 2024", "35 data centers at 100% renewable", "355K MWh saved through efficiency"], bad: [] },
             transparency: { score: 5, good: ["Detailed CSR since 1990", "CDP A-list"], bad: [] },
-            labor: { score: 4, good: ["Strong benefits", "Training programs"], bad: ["Layoffs"] },
+            labor: { score: 4, good: ["Strong benefits", "Training programs"], bad: ["Some layoffs"] },
             recycling: { score: 4, good: ["Product recycling", "Circular initiatives"], bad: [] }
         },
-        badges: ["CDP A-List"], sources: [{ name: "IBM Environment", url: "https://ibm.com/environment" }], lastUpdated: "January 2026"
+        badges: ["CDP A-List", "2025 Target Surpassed"], sources: [{ name: "IBM 2024 Sustainability Report", url: "https://ibm.com/environment" }], lastUpdated: "January 2026"
     },
     oracle: {
         id: "oracle", name: "Oracle", sector: "Tech", greenScore: 62,
@@ -511,16 +511,16 @@ window.COMPANIES_DB = {
         badges: [], sources: [{ name: "Oracle Sustainability", url: "https://oracle.com/sustainability" }], lastUpdated: "January 2026"
     },
     salesforce: {
-        id: "salesforce", name: "Salesforce", sector: "Tech", greenScore: 78,
-        summary: "Net-zero across full value chain achieved. 100% renewable. Strong climate advocacy.",
+        id: "salesforce", name: "Salesforce", sector: "Tech", greenScore: 85,
+        summary: "Net-zero across full value chain achieved FY24/25. 100% renewable since 2021. 50% emissions reduction by 2030, 90% by 2040 targets.",
         categories: {
-            emissions: { score: 5, good: ["Net-zero achieved", "Science-based targets"], bad: [] },
-            energy: { score: 5, good: ["100% renewable since 2021"], bad: [] },
-            transparency: { score: 5, good: ["Stakeholder Impact Report", "Climate action leadership"], bad: [] },
+            emissions: { score: 5, good: ["Net-zero residual emissions achieved", "50% reduction by 2030 target", "90% reduction by 2040 target"], bad: [] },
+            energy: { score: 5, good: ["100% renewable since 2021", "27MW solar Italy VPPA (2025)", "21,500 tonnes CO2 saved annually"], bad: [] },
+            transparency: { score: 5, good: ["Stakeholder Impact Report", "Net Zero Cloud product", "56M trees funded by FY25"], bad: [] },
             labor: { score: 5, good: ["Best places to work", "Equality focus"], bad: [] },
             recycling: { score: 4, good: ["Office programs"], bad: [] }
         },
-        badges: ["Net-Zero Achieved", "100% Renewable"], sources: [{ name: "Salesforce Sustainability", url: "https://salesforce.com/sustainability" }], lastUpdated: "January 2026"
+        badges: ["Net-Zero Achieved", "100% Renewable"], sources: [{ name: "Salesforce FY25 Stakeholder Report", url: "https://salesforce.com/sustainability" }], lastUpdated: "January 2026"
     },
     adobe: {
         id: "adobe", name: "Adobe", sector: "Tech", greenScore: 72,
@@ -671,28 +671,28 @@ window.COMPANIES_DB = {
         badges: [], sources: [{ name: "PepsiCo ESG", url: "https://pepsico.com/sustainability" }], lastUpdated: "January 2026"
     },
     unilever: {
-        id: "unilever", name: "Unilever", sector: "Food & Beverage", greenScore: 68,
-        summary: "Long sustainability leader. Clean Future program. Strong CDP scores. Deforestation-free goal.",
+        id: "unilever", name: "Unilever", sector: "Food & Beverage", greenScore: 75,
+        summary: "72% Scope 1&2 reduction achieved (met 2025 target 2 years early). Net-zero by 2039. CDP A/A/A- ratings. 97% deforestation-free.",
         categories: {
-            emissions: { score: 4, good: ["Net-zero by 2039", "Scope 1&2 reduction achieved"], bad: ["Scope 3 challenging"] },
-            energy: { score: 4, good: ["100% renewable grid electricity"], bad: [] },
-            transparency: { score: 5, good: ["Detailed reports since 1990s", "CDP A-list"], bad: [] },
-            labor: { score: 4, good: ["Living wage commitment"], bad: [] },
-            recycling: { score: 4, good: ["Plastic reduction targets", "Refill stations"], bad: ["Still significant plastic"] }
+            emissions: { score: 5, good: ["Net-zero by 2039", "72% Scope 1&2 reduction (beat 2025 target)", "42% Scope 3 reduction target by 2030"], bad: ["Scope 3 challenging"] },
+            energy: { score: 5, good: ["100% renewable grid electricity achieved"], bad: [] },
+            transparency: { score: 5, good: ["CDP A (Forest), A (Water), A- (Climate)", "300 suppliers in Climate Programme"], bad: [] },
+            labor: { score: 4, good: ["Living wage commitment", "50% supplier Living Wage Promise by 2026"], bad: [] },
+            recycling: { score: 4, good: ["23% virgin plastic reduction", "21% recycled plastic in packaging", "93% collection target met"], bad: ["Revised 2025 targets"] }
         },
-        badges: ["CDP A-List"], sources: [{ name: "Unilever Sustainability", url: "https://unilever.com/sustainability" }], lastUpdated: "January 2026"
+        badges: ["CDP A-List"], sources: [{ name: "Unilever 2024 Sustainability Report", url: "https://unilever.com/sustainability" }], lastUpdated: "January 2026"
     },
     danone: {
-        id: "danone", name: "Danone", sector: "Food & Beverage", greenScore: 72,
-        summary: "B Corp certified. One Planet. One Health vision. Strong on regenerative agriculture.",
+        id: "danone", name: "Danone", sector: "Food & Beverage", greenScore: 82,
+        summary: "Full global B Corp in 2025 (200+ entities). CDP Triple A rating. 25% methane reduction achieved. First to sign Global Methane Pledge.",
         categories: {
-            emissions: { score: 4, good: ["Net-zero by 2050", "Carbon neutral for key brands"], bad: [] },
-            energy: { score: 4, good: ["Renewable progress"], bad: [] },
-            transparency: { score: 5, good: ["B Corp certified", "Integrated reports"], bad: [] },
-            labor: { score: 4, good: ["Living wage efforts"], bad: [] },
-            recycling: { score: 4, good: ["Circular packaging goal"], bad: ["Dairy emissions challenge"] }
+            emissions: { score: 4, good: ["Net-zero by 2050", "25.3% methane reduction from fresh milk (2024)", "First food company to sign Global Methane Pledge"], bad: [] },
+            energy: { score: 4, good: ["Renewable progress", "30% regenerative agriculture by 2025"], bad: [] },
+            transparency: { score: 5, good: ["Full global B Corp 2025 (95% coverage)", "CDP Triple A (climate/water/forest)"], bad: [] },
+            labor: { score: 4, good: ["Living wage efforts", "Renew Danone strategy"], bad: [] },
+            recycling: { score: 4, good: ["Circular packaging goal", "100% deforestation-free by 2025"], bad: ["Dairy emissions challenge"] }
         },
-        badges: ["B-Corp"], sources: [{ name: "Danone Sustainability", url: "https://danone.com/sustainability" }], lastUpdated: "January 2026"
+        badges: ["B-Corp", "CDP Triple A"], sources: [{ name: "Danone 2024 Impact Report", url: "https://danone.com/sustainability" }], lastUpdated: "January 2026"
     },
     kfc: {
         id: "kfc", name: "KFC (Yum!)", sector: "Food & Beverage", greenScore: 40,
@@ -745,16 +745,16 @@ window.COMPANIES_DB = {
 
     // ==================== MORE AUTOMOTIVE ====================
     bmw: {
-        id: "bmw", name: "BMW", sector: "Automotive", greenScore: 62,
-        summary: "Strong EV investment. i series leadership. Circular economy focus. Net-zero by 2050.",
+        id: "bmw", name: "BMW", sector: "Automotive", greenScore: 70,
+        summary: "Climate neutral by 2050. 100% renewable in plants since 2020. 17.4% EV sales in 2024. 60M tonnes CO2 reduction by 2035. i Vision Circular concept.",
         categories: {
-            emissions: { score: 3, good: ["Net-zero by 2050", "i series EVs"], bad: ["ICE still majority"] },
-            energy: { score: 4, good: ["100% renewable at plants"], bad: [] },
-            transparency: { score: 4, good: ["Integrated reports"], bad: [] },
-            labor: { score: 4, good: ["German labor standards"], bad: [] },
-            recycling: { score: 4, good: ["i Vision Circular concept", "Battery recycling"], bad: [] }
+            emissions: { score: 4, good: ["60M tonnes CO2e cut by 2035 commitment", "40% reduction per vehicle by 2030", "80% Scope 1&2 reduction target"], bad: ["ICE still majority"] },
+            energy: { score: 5, good: ["100% renewable at plants since 2020", "First fossil-free factory (Debrecen)", "Green aluminum wheels from 2024"], bad: [] },
+            transparency: { score: 4, good: ["SBTi approved targets", "Detailed integrated reports"], bad: [] },
+            labor: { score: 4, good: ["German labor standards", "Just transition"], bad: [] },
+            recycling: { score: 5, good: ["i Vision Circular (100% recyclable)", "Battery closed-loop since 2024", "Recycled/sustainable materials"], bad: [] }
         },
-        badges: [], sources: [{ name: "BMW Sustainability", url: "https://bmwgroup.com/sustainability" }], lastUpdated: "January 2026"
+        badges: ["100% Renewable Plants"], sources: [{ name: "BMW Group 2024 Sustainability Report", url: "https://bmwgroup.com/sustainability" }], lastUpdated: "January 2026"
     },
     mercedes: {
         id: "mercedes", name: "Mercedes-Benz", sector: "Automotive", greenScore: 60,
@@ -805,16 +805,16 @@ window.COMPANIES_DB = {
         badges: ["Hydrogen Pioneer"], sources: [{ name: "Hyundai Sustainability", url: "https://hyundai.com/sustainability" }], lastUpdated: "January 2026"
     },
     byd: {
-        id: "byd", name: "BYD", sector: "Automotive", greenScore: 72,
-        summary: "World's largest EV maker. Vertical integration. Battery leader. Stopped ICE production.",
+        id: "byd", name: "BYD", sector: "Automotive", greenScore: 75,
+        summary: "World's largest EV maker. 80.3M tonnes pollutants reduced. Net-zero 2050 goal. 50% carbon footprint reduction by 2030. Blade Battery tech.",
         categories: {
-            emissions: { score: 4, good: ["EV-only now", "Battery manufacturing"], bad: ["China grid still coal"] },
-            energy: { score: 4, good: ["Solar investments"], bad: ["Grid limitations"] },
-            transparency: { score: 3, good: ["Some reporting"], bad: ["Less than Western peers"] },
-            labor: { score: 3, good: ["Growing workforce"], bad: ["Working conditions questions"] },
-            recycling: { score: 4, good: ["Battery recycling"], bad: [] }
+            emissions: { score: 4, good: ["80.3M tonnes pollutants reduced (2025)", "Net-zero by 2050", "50% carbon reduction by 2030"], bad: ["China grid still coal-heavy"] },
+            energy: { score: 4, good: ["100% renewable manufacturing by 2030 goal", "Solar investments"], bad: ["Grid limitations"] },
+            transparency: { score: 3, good: ["Annual sustainability reports", "ESG disclosures"], bad: ["Supply chain transparency gaps"] },
+            labor: { score: 3, good: ["Growing workforce", "Human rights policy published"], bad: ["Working conditions concerns"] },
+            recycling: { score: 4, good: ["Battery recycling", "30% recycled materials by 2025 goal", "Second-life battery programs"], bad: [] }
         },
-        badges: ["EV Leader"], sources: [{ name: "BYD", url: "https://byd.com" }], lastUpdated: "January 2026"
+        badges: ["EV Leader", "Blade Battery"], sources: [{ name: "BYD 2024 Sustainability Report", url: "https://byd.com" }], lastUpdated: "January 2026"
     },
 
     // ==================== MORE RETAIL ====================
