@@ -15,12 +15,18 @@ function setApiKey(key) {
 
 function loadApiKey() {
     const savedKey = localStorage.getItem('greencheck_ai_key');
-    if (savedKey) AI_CONFIG.apiKey = savedKey;
+    if (savedKey && savedKey.length > 0) {
+        AI_CONFIG.apiKey = savedKey;
+    }
+    // Debug log
+    console.log('API Key loaded, length:', AI_CONFIG.apiKey ? AI_CONFIG.apiKey.length : 0);
     return AI_CONFIG.apiKey && AI_CONFIG.apiKey.length > 0;
 }
 
 function hasApiKey() {
-    return AI_CONFIG.apiKey && AI_CONFIG.apiKey.length > 0;
+    const has = AI_CONFIG.apiKey && AI_CONFIG.apiKey.length > 0;
+    if (!has) console.log('hasApiKey: NO KEY!', AI_CONFIG.apiKey);
+    return has;
 }
 
 async function analyzeWithGemini(companyName) {
