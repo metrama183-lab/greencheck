@@ -499,16 +499,16 @@ window.COMPANIES_DB = {
         badges: ["CDP A-List", "2025 Target Surpassed"], sources: [{ name: "IBM 2024 Sustainability Report", url: "https://ibm.com/environment" }], lastUpdated: "January 2026"
     },
     oracle: {
-        id: "oracle", name: "Oracle", sector: "Tech", greenScore: 62,
-        summary: "Cloud sustainability focus. 100% renewable for cloud regions. Data center efficiency leader.",
+        id: "oracle", name: "Oracle", sector: "Tech", greenScore: 72,
+        summary: "100% renewable by 2025 goal. EU Cloud already 100% renewable. Carbon neutral Scope 1&2 by 2025. Net-zero by 2050. 99.6% hardware recycled.",
         categories: {
-            emissions: { score: 3, good: ["Net-zero goal", "Scope 2 reductions"], bad: ["Growing infrastructure"] },
-            energy: { score: 4, good: ["100% renewable cloud regions", "Efficient cooling"], bad: [] },
-            transparency: { score: 3, good: ["CSR reports"], bad: ["Less detailed than peers"] },
+            emissions: { score: 4, good: ["Carbon neutral Scope 1&2 by 2025", "Net-zero by 2050", "50% emissions cut by 2030"], bad: [] },
+            energy: { score: 4, good: ["100% renewable by 2025 goal", "EU Cloud 100% renewable", "Efficient data center cooling"], bad: [] },
+            transparency: { score: 4, good: ["UN Race to Zero partner", "Fusion Cloud Sustainability tool"], bad: [] },
             labor: { score: 4, good: ["Employee benefits"], bad: [] },
-            recycling: { score: 3, good: ["E-waste programs"], bad: [] }
+            recycling: { score: 5, good: ["99.6% hardware reused/recycled", "E-waste programs", "33% water/waste reduction by 2025"], bad: [] }
         },
-        badges: [], sources: [{ name: "Oracle Sustainability", url: "https://oracle.com/sustainability" }], lastUpdated: "January 2026"
+        badges: ["Race to Zero"], sources: [{ name: "Oracle 2024 Sustainability Report", url: "https://oracle.com/sustainability" }], lastUpdated: "January 2026"
     },
     salesforce: {
         id: "salesforce", name: "Salesforce", sector: "Tech", greenScore: 85,
@@ -523,16 +523,16 @@ window.COMPANIES_DB = {
         badges: ["Net-Zero Achieved", "100% Renewable"], sources: [{ name: "Salesforce FY25 Stakeholder Report", url: "https://salesforce.com/sustainability" }], lastUpdated: "January 2026"
     },
     adobe: {
-        id: "adobe", name: "Adobe", sector: "Tech", greenScore: 72,
-        summary: "100% renewable electricity. Net-zero operations. Strong on employee sustainability.",
+        id: "adobe", name: "Adobe", sector: "Tech", greenScore: 78,
+        summary: "100% renewable by end 2025. Met 2025 Scope 1/2/travel targets early. Net-zero by 2050. 70% renewable in 2024. CDP A-list, Supplier Award 2024.",
         categories: {
-            emissions: { score: 4, good: ["Net-zero operations", "Science-based targets"], bad: [] },
-            energy: { score: 5, good: ["100% renewable electricity"], bad: [] },
-            transparency: { score: 4, good: ["CSR reports", "CDP reporting"], bad: [] },
-            labor: { score: 5, good: ["Great workplace", "Benefits"], bad: [] },
-            recycling: { score: 4, good: ["Office sustainability"], bad: [] }
+            emissions: { score: 4, good: ["42% Scope 1&2 reduction by 2030", "52% Scope 3 intensity by 2030", "Met 2025 targets early"], bad: [] },
+            energy: { score: 5, good: ["100% renewable by end 2025", "70% renewable 2024", "Founders Tower 100% solar/wind"], bad: [] },
+            transparency: { score: 5, good: ["CDP A-list", "CDP Supplier Award 2024", "CSR Report"], bad: [] },
+            labor: { score: 5, good: ["Great workplace", "55% suppliers with SBTs by 2025"], bad: [] },
+            recycling: { score: 4, good: ["90% waste diversion", "80% LEED buildings"], bad: [] }
         },
-        badges: ["100% Renewable"], sources: [{ name: "Adobe Sustainability", url: "https://adobe.com/sustainability" }], lastUpdated: "January 2026"
+        badges: ["CDP A-List", "2025 Targets Met Early"], sources: [{ name: "Adobe 2024 CSR Report", url: "https://adobe.com/sustainability" }], lastUpdated: "January 2026"
     },
     x_twitter: {
         id: "x_twitter", name: "X (Twitter)", sector: "Tech", greenScore: 35,
@@ -559,28 +559,28 @@ window.COMPANIES_DB = {
         badges: ["Carbon Neutral"], sources: [{ name: "PayPal ESG", url: "https://paypal.com/sustainability" }], lastUpdated: "January 2026"
     },
     visa: {
-        id: "visa", name: "Visa", sector: "Finance", greenScore: 68,
-        summary: "Carbon neutral operations since 2020. 100% renewable electricity. Climate tech investments.",
+        id: "visa", name: "Visa", sector: "Finance", greenScore: 82,
+        summary: "Carbon neutral since 2020. 100% renewable since 2020. Net-zero by 2040 (10 years ahead of Paris). 81% Scope 1&2 reduction by 2030.",
         categories: {
-            emissions: { score: 4, good: ["Carbon neutral since 2020", "Net-zero by 2040"], bad: [] },
-            energy: { score: 5, good: ["100% renewable electricity"], bad: [] },
-            transparency: { score: 4, good: ["ESG reports"], bad: [] },
+            emissions: { score: 5, good: ["Carbon neutral since 2020", "Net-zero by 2040", "81% Scope 1&2 reduction by FY2030", "46% Scope 3 reduction by FY2030"], bad: [] },
+            energy: { score: 5, good: ["100% renewable since 2020"], bad: [] },
+            transparency: { score: 5, good: ["SBTi 1.5°C approved", "GRI/SASB/TCFD aligned"], bad: [] },
             labor: { score: 4, good: ["Strong benefits"], bad: [] },
-            recycling: { score: 3, good: ["Card recycling pilots"], bad: ["Plastic cards"] }
+            recycling: { score: 3, good: ["Sustainable commerce initiatives"], bad: ["Plastic cards"] }
         },
-        badges: ["Carbon Neutral"], sources: [{ name: "Visa ESG", url: "https://visa.com/esg" }], lastUpdated: "January 2026"
+        badges: ["Carbon Neutral", "100% Renewable"], sources: [{ name: "Visa 2024 ESG Report", url: "https://visa.com/esg" }], lastUpdated: "January 2026"
     },
     mastercard: {
-        id: "mastercard", name: "Mastercard", sector: "Finance", greenScore: 70,
-        summary: "Carbon neutral since 2021. Strong climate action. Priceless Planet Coalition founder.",
+        id: "mastercard", name: "Mastercard", sector: "Finance", greenScore: 85,
+        summary: "46% emissions reduction by 2024. Carbon neutral since 2020. 100% renewable since 2019. Net-zero by 2040. 100M trees goal. PVC-free cards by 2028.",
         categories: {
-            emissions: { score: 4, good: ["Carbon neutral since 2021", "Science-based targets"], bad: [] },
-            energy: { score: 5, good: ["100% renewable"], bad: [] },
-            transparency: { score: 5, good: ["ESG reports", "TCFD"], bad: [] },
-            labor: { score: 4, good: ["Great workplace"], bad: [] },
-            recycling: { score: 4, good: ["Sustainable cards", "Tree planting"], bad: [] }
+            emissions: { score: 5, good: ["46% total emissions reduction (2024)", "Carbon neutral since 2020", "Net-zero by 2040", "48% Scope 1&2 cut"], bad: [] },
+            energy: { score: 5, good: ["100% renewable since 2019", "Geothermal HQ investment", "Solar panels across offices"], bad: [] },
+            transparency: { score: 5, good: ["2024 Impact Report", "71% suppliers with SBTs"], bad: [] },
+            labor: { score: 4, good: ["Great workplace", "Inclusive growth"], bad: [] },
+            recycling: { score: 5, good: ["100M trees by 2025 (Priceless Planet)", "PVC-free cards by 2028"], bad: [] }
         },
-        badges: ["Carbon Neutral", "Priceless Planet"], sources: [{ name: "Mastercard Sustainability", url: "https://mastercard.com/sustainability" }], lastUpdated: "January 2026"
+        badges: ["Carbon Neutral", "100% Renewable", "Priceless Planet"], sources: [{ name: "Mastercard 2024 Impact Report", url: "https://mastercard.com/sustainability" }], lastUpdated: "January 2026"
     },
 
     // ==================== MORE FASHION ====================
@@ -597,28 +597,28 @@ window.COMPANIES_DB = {
         badges: [], controversies: ["Supply chain concerns"], sources: [{ name: "Uniqlo Sustainability", url: "https://uniqlo.com/sustainability" }], lastUpdated: "January 2026"
     },
     levis: {
-        id: "levis", name: "Levi's", sector: "Fashion", greenScore: 68,
-        summary: "Water<Less innovation. SecondHand resale. Long-lasting denim philosophy. Climate action leadership.",
+        id: "levis", name: "Levi's", sector: "Fashion", greenScore: 78,
+        summary: "90% Scope 1&2 reduction by 2025. Net-zero by 2050 (SBTi May 2024). WaterLess 13B liters saved. Climate Transition Plan Oct 2024.",
         categories: {
-            emissions: { score: 3, good: ["Science-based targets", "90% renewable in owned ops"], bad: ["Supply chain Scope 3"] },
-            energy: { score: 4, good: ["90% renewable owned operations"], bad: [] },
-            transparency: { score: 4, good: ["Detailed sustainability reports"], bad: [] },
-            labor: { score: 4, good: ["Worker wellbeing program", "Supplier standards"], bad: [] },
-            recycling: { score: 5, good: ["Water<Less tech (saves 3B liters)", "SecondHand program", "Tailor shops"], bad: [] }
+            emissions: { score: 5, good: ["90% Scope 1&2 reduction by 2025", "Net-zero 2050 (SBTi approved)", "42% Scope 3 by 2030"], bad: [] },
+            energy: { score: 5, good: ["100% renewable in owned facilities"], bad: [] },
+            transparency: { score: 5, good: ["TCFD/CDP aligned", "Climate Transition Plan Oct 2024"], bad: [] },
+            labor: { score: 4, good: ["Worker wellbeing programs"], bad: [] },
+            recycling: { score: 4, good: ["WaterLess 13B liters saved", "SecondHand resale", "Tailor shops"], bad: ["Missed 50% water target (27%)"] }
         },
-        badges: ["Water Innovation"], sources: [{ name: "Levi's Sustainability", url: "https://levistrauss.com/sustainability" }], lastUpdated: "January 2026"
+        badges: ["SBTi Net-Zero", "WaterLess Pioneer"], sources: [{ name: "Levi's 2024 Sustainability", url: "https://levistrauss.com/sustainability" }], lastUpdated: "January 2026"
     },
     puma: {
-        id: "puma", name: "Puma", sector: "Fashion", greenScore: 64,
-        summary: "RE:SUEDE biodegradable shoes. Science-based targets. First Fashion Pact signatory.",
+        id: "puma", name: "Puma", sector: "Fashion", greenScore: 80,
+        summary: "86% ops emissions cut. 90% recycled/certified products (met 2025 early). RE:SUEDE compostable. 100% renewable offices/stores.",
         categories: {
-            emissions: { score: 3, good: ["Science-based targets", "35% reduction goal"], bad: ["Manufacturing footprint"] },
-            energy: { score: 4, good: ["100% renewable owned ops"], bad: [] },
-            transparency: { score: 4, good: ["Sustainability reports", "EP&L accounting"], bad: [] },
+            emissions: { score: 5, good: ["86% Scope 1&2 reduction (2024)", "17% Scope 3 cut", "90% by 2030 target"], bad: [] },
+            energy: { score: 5, good: ["100% renewable offices/stores/warehouses", "25% supplier renewable by 2025"], bad: [] },
+            transparency: { score: 4, good: ["SBTi 1.5C validated", "Vision 2030"], bad: [] },
             labor: { score: 3, good: ["Supplier audits"], bad: ["Supply chain challenges"] },
-            recycling: { score: 4, good: ["RE:SUEDE program", "Recycled materials"], bad: [] }
+            recycling: { score: 5, good: ["90% products recycled/certified (2024)", "RE:SUEDE compostable", "75% recycled polyester"], bad: [] }
         },
-        badges: ["Fashion Pact"], sources: [{ name: "Puma Sustainability", url: "https://puma.com/sustainability" }], lastUpdated: "January 2026"
+        badges: ["Fashion Pact", "SBTi 1.5C"], sources: [{ name: "Puma 2024 Report", url: "https://puma.com/sustainability" }], lastUpdated: "January 2026"
     },
     gucci: {
         id: "gucci", name: "Gucci (Kering)", sector: "Fashion", greenScore: 66,
@@ -645,16 +645,16 @@ window.COMPANIES_DB = {
         badges: [], sources: [{ name: "Gap ESG", url: "https://gapinc.com/sustainability" }], lastUpdated: "January 2026"
     },
     northface: {
-        id: "northface", name: "The North Face", sector: "Fashion", greenScore: 70,
-        summary: "VF Corporation brand. Strong on recycled materials. Renewed program for resale. Outdoor conservation.",
+        id: "northface", name: "The North Face", sector: "Fashion", greenScore: 78,
+        summary: "80% recycled synthetics. 100% sustainable materials by 2025. Renewed resale. VF 64% recycled polyester (beat 2026 target).",
         categories: {
             emissions: { score: 4, good: ["VF net-zero by 2050", "Science-based targets"], bad: [] },
-            energy: { score: 4, good: ["Renewable progress"], bad: [] },
-            transparency: { score: 4, good: ["VF sustainability reports"], bad: [] },
-            labor: { score: 4, good: ["Supplier standards"], bad: [] },
-            recycling: { score: 5, good: ["Renewed resale program", "Recycled materials", "Product durability"], bad: [] }
+            energy: { score: 4, good: ["VF renewable investments"], bad: [] },
+            transparency: { score: 4, good: ["VF FY25 ESR Report", "61% supply chain traced"], bad: [] },
+            labor: { score: 4, good: ["VF supplier standards"], bad: [] },
+            recycling: { score: 5, good: ["80% recycled synthetics", "Renewed resale", "Alpine Polartec 100% recycled", "No single-use plastic by 2025"], bad: [] }
         },
-        badges: ["Renewed Program"], sources: [{ name: "TNF Sustainability", url: "https://thenorthface.com/sustainability" }], lastUpdated: "January 2026"
+        badges: ["Renewed Program", "Circular Design"], sources: [{ name: "VF Corp FY25 Report", url: "https://thenorthface.com/sustainability" }], lastUpdated: "January 2026"
     },
 
     // ==================== MORE FOOD ====================
