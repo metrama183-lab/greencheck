@@ -929,16 +929,16 @@ window.COMPANIES_DB = {
         badges: [], controversies: ["Uganda pipeline"], sources: [{ name: "TotalEnergies", url: "https://totalenergies.com/sustainability" }], lastUpdated: "January 2026"
     },
     nextera: {
-        id: "nextera", name: "NextEra Energy", sector: "Energy", greenScore: 82,
-        summary: "World's largest wind/solar generator. Leading US clean energy transition. Still some gas.",
+        id: "nextera", name: "NextEra Energy", sector: "Energy", greenScore: 88,
+        summary: "World's largest wind/solar generator (31GW+). Real Zero by 2045. 70% emissions reduction by 2025. 2.2GW solar added 2024.",
         categories: {
-            emissions: { score: 4, good: ["Largest wind/solar generator", "67% reduction since 2005"], bad: ["Some natural gas"] },
-            energy: { score: 5, good: ["50+ GW renewables", "Wind/solar leader"], bad: [] },
-            transparency: { score: 4, good: ["ESG reports"], bad: [] },
-            labor: { score: 4, good: ["Clean energy jobs"], bad: [] },
-            recycling: { score: 4, good: ["Solar panel recycling"], bad: ["Blade disposal"] }
+            emissions: { score: 5, good: ["Real Zero by 2045 (no offsets)", "70% reduction by 2025", "82% by 2030, 94% by 2040"], bad: ["Some natural gas"] },
+            energy: { score: 5, good: ["31GW clean energy operating", "36-46GW new capacity 2024-2027", "FPL 2.2GW solar in 2024"], bad: [] },
+            transparency: { score: 5, good: ["Third-party verified emissions", "Comprehensive sustainability reports"], bad: [] },
+            labor: { score: 4, good: ["Clean energy jobs", "Offshore wind expansion"], bad: [] },
+            recycling: { score: 4, good: ["Solar panel recycling", "28B gallons water saved 2024"], bad: ["Blade disposal"] }
         },
-        badges: ["Clean Energy Leader"], sources: [{ name: "NextEra ESG", url: "https://nexteraenergy.com/esg" }], lastUpdated: "January 2026"
+        badges: ["Clean Energy Leader", "Real Zero 2045"], sources: [{ name: "NextEra 2024 Sustainability Report", url: "https://nexteraenergy.com/sustainability" }], lastUpdated: "January 2026"
     },
     iberdrola: {
         id: "iberdrola", name: "Iberdrola", sector: "Energy", greenScore: 80,
@@ -1167,28 +1167,28 @@ window.COMPANIES_DB = {
         badges: ["CDP A-List"], sources: [{ name: "Cisco CSR", url: "https://cisco.com/csr" }], lastUpdated: "January 2026"
     },
     sap: {
-        id: "sap", name: "SAP", sector: "Tech", greenScore: 78,
-        summary: "Carbon neutral since 2023. 100% renewable. Strong enterprise sustainability software.",
+        id: "sap", name: "SAP", sector: "Tech", greenScore: 82,
+        summary: "Carbon neutral since 2023 (2 years early). Net-zero by 2030 (20 years ahead). TIME #15 most sustainable company 2024. 21M trees by 2025.",
         categories: {
-            emissions: { score: 5, good: ["Carbon neutral since 2023", "Net-zero 2030"], bad: [] },
-            energy: { score: 5, good: ["100% renewable since 2014"], bad: [] },
-            transparency: { score: 5, good: ["Integrated Report", "CDP A-list"], bad: [] },
-            labor: { score: 5, good: ["Top employer"], bad: [] },
-            recycling: { score: 4, good: ["Circular solutions"], bad: [] }
+            emissions: { score: 5, good: ["Carbon neutral since 2023", "Net-zero 2030 (20 years early)", "Supplier GHG reporting mandate 2024"], bad: [] },
+            energy: { score: 5, good: ["100% renewable electricity", "Data center efficiency", "Cloud carbon footprint tool"], bad: [] },
+            transparency: { score: 5, good: ["CSRD compliant 2024", "CDP B score", "TIME Top 15 sustainable companies"], bad: [] },
+            labor: { score: 5, good: ["Top employer globally"], bad: [] },
+            recycling: { score: 4, good: ["Circular solutions", "25M trees by 2030 goal"], bad: [] }
         },
-        badges: ["Carbon Neutral", "CDP A-List"], sources: [{ name: "SAP Sustainability", url: "https://sap.com/sustainability" }], lastUpdated: "January 2026"
+        badges: ["Carbon Neutral", "TIME Top 15"], sources: [{ name: "SAP Integrated Report 2024", url: "https://sap.com/sustainability" }], lastUpdated: "January 2026"
     },
     loreal: {
-        id: "loreal", name: "L'Oréal", sector: "Fashion", greenScore: 75,
-        summary: "Carbon neutral sites by 2025. Strong on sustainable sourcing. L'Oréal for the Future program.",
+        id: "loreal", name: "L'Oréal", sector: "Fashion", greenScore: 88,
+        summary: "CDP Triple A for 10 consecutive years (only company ever). 97% renewable sites. Carbon neutral factories. 100% renewable by end 2025.",
         categories: {
-            emissions: { score: 4, good: ["Carbon neutral by 2025", "Science-based targets"], bad: [] },
-            energy: { score: 5, good: ["100% renewable in 2025"], bad: [] },
-            transparency: { score: 5, good: ["Detailed reports", "CDP A-list"], bad: [] },
-            labor: { score: 4, good: ["Good workplace"], bad: [] },
-            recycling: { score: 4, good: ["100% recyclable packaging goal", "Refillable lines"], bad: [] }
+            emissions: { score: 5, good: ["Carbon neutral factories (US/EU/China/India)", "Science-based targets"], bad: [] },
+            energy: { score: 5, good: ["97% renewable sites 2024", "100% renewable by end 2025", "100% renewable Europe achieved Dec 2024"], bad: [] },
+            transparency: { score: 5, good: ["CDP Triple A 10 consecutive years (only company)", "L'Oréal for the Future program"], bad: [] },
+            labor: { score: 4, good: ["Good workplace", "Supplier standards"], bad: [] },
+            recycling: { score: 4, good: ["49% recyclable packaging", "37% recycled/biobased materials", "100% goal by 2030"], bad: ["Missed 2025 targets"] }
         },
-        badges: ["CDP A-List"], sources: [{ name: "L'Oréal Sustainability", url: "https://loreal.com/sustainability" }], lastUpdated: "January 2026"
+        badges: ["CDP Triple A (10 years)"], sources: [{ name: "L'Oréal 2024 Sustainability Report", url: "https://loreal.com/sustainability" }], lastUpdated: "January 2026"
     },
     redbull: {
         id: "redbull", name: "Red Bull", sector: "Food & Beverage", greenScore: 50,
