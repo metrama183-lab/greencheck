@@ -63,25 +63,6 @@
 - Corporate Sustainability Reports (2024-2025)
 - EPA, news, and verified public sources
 
-## 🚀 Quick Start
-
-1. Clone this repository
-2. Open `index.html` in your browser
-3. Search for any company!
-
-### Enable AI Analysis (Optional)
-
-For unknown companies, add your free Gemini API key:
-
-```javascript
-// In browser console:
-GeminiAI.setApiKey('your-api-key-here')
-```
-
-Get a free key at [Google AI Studio](https://aistudio.google.com/)
-
-## 📱 Screenshots
-
 ### Search Results
 High-scoring company (Apple - 85/100):
 - Verified badge
