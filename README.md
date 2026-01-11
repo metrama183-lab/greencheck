@@ -41,7 +41,7 @@
 | Structure | HTML5 |
 | Styling | Vanilla CSS (Custom Design System) |
 | Logic | Vanilla JavaScript |
-| AI | Google Gemini API |
+| AI | Groq API |
 | Hosting | GitHub Pages |
 
 **No frameworks. No build step. Just clean, fast code.**
