@@ -192,7 +192,8 @@ input {
     height: 4px;
     background: var(--green-100);
     border-radius: 50%;
-    opacity: 0.3;
+    opacity: 0;
+    transform: translateY(100vh);
     animation: particleFloat 15s infinite;
 }
 
